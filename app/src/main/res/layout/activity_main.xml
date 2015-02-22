@@ -7,7 +7,9 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:id="@+id/theLayout"
+        android:background="#F2F3F4">
 
 
 
@@ -39,7 +41,12 @@
             android:textIsSelectable="false"
             android:textSize="25dp"
             android:linksClickable="false"
-            android:clickable="true" />
+            android:clickable="true"
+            android:background="#fff2f3f4"
+            android:shadowColor="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF" />
 
         <Button
             android:id="@+id/txtLink2"
@@ -49,6 +56,11 @@
             android:autoLink="all"
             android:textIsSelectable="false"
             android:textSize="25dp"
+            android:background="#fff2f3f4"
+            android:shadowColor="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
 
         <Button
@@ -59,6 +71,11 @@
             android:autoLink="all"
             android:textIsSelectable="false"
             android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
 
         <Button
@@ -69,6 +86,11 @@
             android:autoLink="all"
             android:textIsSelectable="false"
             android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
 
         <Button
@@ -79,6 +101,11 @@
             android:autoLink="all"
             android:textIsSelectable="false"
             android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
         <Button
             android:id="@+id/txtLink6"
@@ -88,6 +115,11 @@
             android:autoLink="all"
             android:textIsSelectable="false"
             android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
         <Button
             android:id="@+id/txtLink7"
@@ -97,6 +129,11 @@
             android:autoLink="all"
             android:textIsSelectable="false"
             android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
         <Button
             android:id="@+id/txtLink8"
@@ -106,6 +143,11 @@
             android:autoLink="all"
             android:textIsSelectable="false"
             android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
         <Button
             android:id="@+id/txtLink9"
@@ -116,6 +158,11 @@
             android:textIsSelectable="false"
             android:clickable="true"
             android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
             />
 
 
