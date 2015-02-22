@@ -22,10 +22,15 @@
     <string
         name="question"
         >A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
-    A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
-        A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
-        A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
-
     </string>
+
+
+        <string name="displacement"
+        > Displacement is vector quantity, meaning it has a magnitude and a direction.
+        The displacement of an object that moves from point A to point B is a vector whose tail is
+        at A and whose tip is at B. The distance equals the total distance covered from point A to B. If I started from         point A and travels in a circular motion and ends back at position A the displacement would equal 0 where as the        distance would the circumference of the circle.  Since the displacement is a vector quantity, it is not enough          to say that the displacement is 100 meters: you must also state the direction of that displacement.
+
+        </string>
+
 
 </resources>
