@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Infinite Blackboard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Prev_text">Prev</string>
+    <string name="Next_text">Next</string>
+    <string name="Home_text">Home</string>
+
+
+    <string name="Displacement_text">Displacement</string>
+    <string name="Speed_text">Speed</string>
+    <string name="Velocity_text">Velocity</string>
+    <string name="Acceleration_text">Acceleration</string>
+    <string name="Graphs_text">Kinematics with Graphs</string>
+    <string name="OneD_text">1-D Motion</string>
+    <string name="TwoD_text">2-D Motion</string>
+    <string name="Formulas_text">Formulas</string>
+    <string name="Review_text">Review</string>
+
+    <string
+        name="question"
+        >A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
+    A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
+        A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
+        A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
+
+    </string>
+
+</resources>
