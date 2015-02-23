@@ -21,13 +21,14 @@
 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-
-            android:text="@string/displacement"
+            android:text="@string/displacement1"
             android:textStyle="bold|italic" />
         <TextView
 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:text="@string/displacement2"
+            android:textStyle="bold|italic" />
 
             />
 
