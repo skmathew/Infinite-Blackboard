@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:id="@+id/theLayout"
+        android:background="#F2F3F4">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/homepage"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_name"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40dp" />
+
+
+
+        <Button
+            android:id="@+id/txtLink1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Displacement_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:linksClickable="false"
+            android:clickable="true"
+            android:background="#fff2f3f4"
+            android:shadowColor="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF" />
+
+        <Button
+            android:id="@+id/txtLink2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Speed_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:background="#fff2f3f4"
+            android:shadowColor="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+
+        <Button
+            android:id="@+id/txtLink3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Velocity_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+
+        <Button
+            android:id="@+id/txtLink4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Acceleration_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+
+        <Button
+            android:id="@+id/txtLink5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Graphs_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+        <Button
+            android:id="@+id/txtLink6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/OneD_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+        <Button
+            android:id="@+id/txtLink7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TwoD_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+        <Button
+            android:id="@+id/txtLink8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Formulas_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+        <Button
+            android:id="@+id/txtLink9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Review_text"
+            android:autoLink="all"
+            android:textIsSelectable="false"
+            android:clickable="true"
+            android:textSize="25dp"
+            android:shadowColor="#fff2f3f4"
+            android:background="#fff2f3f4"
+            android:singleLine="true"
+            android:textStyle="italic"
+            android:textColor="#0000FF"
+            />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
