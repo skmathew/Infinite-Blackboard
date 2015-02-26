@@ -32,6 +32,20 @@
             Distance is scalar quantity meaning it only has magnitude. The distance equals the total distance covered from point A to B. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance would the circumference of the circle.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
         </string>
 
+    <string name="twod_motion1">
+            2-dimensional motion is just like 1-dimensional motion, but with two directions to consider instead of just one! With 2D motion, we must now consider both horizontal motion and vertical motion at the same time! This is often portrayed through projectile motion. Projectile motion is when an object is traveling in freefall, but is also traveling horizontally simultaneously. A projectile\'s velocity changes in the vertical direction, but remains constant in the horizontal direction.
+        </string>
+
+    <string name="twod_motion2">
+        A very common example of this is shooting a cannonball out of a cannon. The path of the cannonball often follows a parabolic path that not only travels vertically, but horizontally as well! We\'ll be using the four kinematic equations to determine the displacement, time, velocity, or acceleration at any given moment during the projectile\'s motion.
+    </string>
+
+    <string name="twod_motionQuestion">
+        If a cannonball has an initial velocity of 860 m/s, what distance away does the cannonball hit the ground when shot from the cannon at a 45 degree angle with the horizontal?
+    </string>
+
+    <string name="title_activity_two_dmotion">Infinite Blackboard</string>
+    <string name="title_activity_two_dmotion_qa">Infinite Blackboard</string>
 
 </resources>
 
