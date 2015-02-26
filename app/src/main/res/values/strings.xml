@@ -29,6 +29,30 @@
         Distance is scalar quantity meaning it only has magnitude. The distance equals the total distance covered from point A to B. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance would the circumference of the circle.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
     </string>
 
+    <string name="speed1">
+        In everyday use and in kinematics, the speed of an object is the magnitude of its velocity (the rate of change of its position).
+    </string>
+
+    <string name="speed2">
+
+    </string>
+
+    <string name="SpeedQuestion">
+
+    </string>
+
+    <string name="velocity1">
+        Velocity is the rate of change of the displacement,Δx. It is the difference between the final and initial position of an object.
+    </string>
+
+    <string name="velocity2">
+
+    </string>
+
+    <string name="VelocityQuestion">
+
+    </string>
+
     <string name="acceleration1">
         Speed and velocity only deal with movement at a constant rate. When we speed up, slow down, or change direction, we want to know our acceleration.
     </string>
@@ -57,5 +81,9 @@
     <string name="title_activity_two_dmotion_qa">Infinite Blackboard</string>
     <string name="title_activity_acceleration">Infinite Blackboard</string>
     <string name="title_activity_acceleration_qa">Infinite Blackboard</string>
+    <string name="title_activity_speed">Infinite Blackboard</string>
+    <string name="title_activity_speed_qa">Infinite Blackboard</string>
+    <string name="title_activity_velocity">VelocityActivity</string>
+    <string name="title_activity_velocity_qa">VelocityQAActivity</string>
 
 </resources>

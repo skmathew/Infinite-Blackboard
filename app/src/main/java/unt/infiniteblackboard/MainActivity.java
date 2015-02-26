@@ -38,6 +38,36 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
+        final Button buttonSpeed = (Button) findViewById(R.id.txtLink2);
+
+        // Capture button clicks
+        buttonSpeed.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+
+
+                Intent myIntent = new Intent(MainActivity.this,
+                        SpeedActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
+        final Button buttonVelocity = (Button) findViewById(R.id.txtLink3);
+
+        // Capture button clicks
+        buttonVelocity.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+
+
+                Intent myIntent = new Intent(MainActivity.this,
+                        VelocityActivity.class);
+                startActivity(myIntent);
+            }
+        });
+
         final Button buttonAcceleration = (Button) findViewById(R.id.txtLink4);
 
         // Capture button clicks

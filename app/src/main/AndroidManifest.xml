@@ -47,6 +47,22 @@
             android:name=".AccelerationQAActivity"
             android:label="@string/title_activity_acceleration_qa" >
         </activity>
+        <activity
+            android:name=".SpeedActivity"
+            android:label="@string/title_activity_speed" >
+        </activity>
+        <activity
+            android:name=".SpeedQAActivity"
+            android:label="@string/title_activity_speed_qa" >
+        </activity>
+        <activity
+            android:name=".VelocityActivity"
+            android:label="@string/title_activity_velocity" >
+        </activity>
+        <activity
+            android:name=".VelocityQAActivity"
+            android:label="@string/title_activity_velocity_qa" >
+        </activity>
     </application>
 
 </manifest>
