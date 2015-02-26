@@ -1,80 +1,69 @@
+// Zijia Zhai
+
 package unt.infiniteblackboard;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.view.View.OnClickListener;
 
 
-
-public class MainActivity extends ActionBarActivity {
-
-    private static TextView txtLink1;
-
-
+public class AccelerationActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_acceleration);
 
-        final Button button = (Button) findViewById(R.id.txtLink1);
+        final Button homeButton = (Button) findViewById(R.id.Home_button);
+        final Button previousButton = (Button) findViewById(R.id.Previous_Button);
+        final Button nextButton = (Button) findViewById(R.id.Next_Button);
 
         // Capture button clicks
-        button.setOnClickListener(new OnClickListener() {
+        homeButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
 
 
-                Intent myIntent = new Intent(MainActivity.this,
-                       DisplacementActivity.class);
+                Intent myIntent = new Intent(AccelerationActivity.this,
+                        MainActivity.class);
                 startActivity(myIntent);
             }
         });
 
-        final Button buttonAcceleration = (Button) findViewById(R.id.txtLink4);
-
         // Capture button clicks
-        buttonAcceleration.setOnClickListener(new OnClickListener() {
+        previousButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-
-
-                Intent myIntent = new Intent(MainActivity.this,
-                        AccelerationActivity.class);
+                Intent myIntent = new Intent(AccelerationActivity.this,
+                        MainActivity.class); //Change MainActivity.class to name of 1D Motion Activity (QA or Review?) class later
                 startActivity(myIntent);
             }
         });
 
-        final Button button2D = (Button) findViewById(R.id.txtLink7);
-
         // Capture button clicks
-        button2D.setOnClickListener(new OnClickListener() {
+        nextButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-
-
-                Intent myIntent = new Intent(MainActivity.this,
-                        TwoDMotionActivity.class);
+                Intent myIntent = new Intent(AccelerationActivity.this,
+                        AccelerationQAActivity.class);
                 startActivity(myIntent);
             }
         });
+
     }
-
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_acceleration, menu);
         return true;
     }
 
