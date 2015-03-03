@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
 
@@ -31,146 +31,31 @@
             android:textSize="40dp" />
 
 
+        <TextView
+
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hometext"
+            android:textStyle="bold|italic" />
+
+</LinearLayout>
+
+
 
         <Button
-            android:id="@+id/txtLink1"
-            android:layout_width="wrap_content"
+            android:id="@+id/Start_Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Displacement_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:linksClickable="false"
-            android:clickable="true"
-            android:background="#fff2f3f4"
-            android:shadowColor="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF" />
-
-        <Button
-            android:id="@+id/txtLink2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Speed_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:background="#fff2f3f4"
-            android:shadowColor="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
-
-        <Button
-            android:id="@+id/txtLink3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Velocity_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:shadowColor="#fff2f3f4"
-            android:background="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
-
-        <Button
-            android:id="@+id/txtLink4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Acceleration_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:shadowColor="#fff2f3f4"
-            android:background="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
-
-        <Button
-            android:id="@+id/txtLink5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Graphs_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:shadowColor="#fff2f3f4"
-            android:background="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
-        <Button
-            android:id="@+id/txtLink6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/OneD_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:shadowColor="#fff2f3f4"
-            android:background="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
-        <Button
-            android:id="@+id/txtLink7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/TwoD_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:shadowColor="#fff2f3f4"
-            android:background="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
-        <Button
-            android:id="@+id/txtLink8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Formulas_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:textSize="25dp"
-            android:shadowColor="#fff2f3f4"
-            android:background="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
-        <Button
-            android:id="@+id/txtLink9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Review_text"
-            android:autoLink="all"
-            android:textIsSelectable="false"
-            android:clickable="true"
-            android:textSize="25dp"
-            android:shadowColor="#fff2f3f4"
-            android:background="#fff2f3f4"
-            android:singleLine="true"
-            android:textStyle="italic"
-            android:textColor="#0000FF"
-            />
+            android:text="Start"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+            android:layout_weight="1">
+        </Button>
 
 
 
 
-    </LinearLayout>
 
-</ScrollView>
-
-
-
+</RelativeLayout>

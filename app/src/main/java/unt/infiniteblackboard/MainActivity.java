@@ -8,8 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.view.View.OnClickListener;
-
+import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -23,80 +22,18 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button button = (Button) findViewById(R.id.txtLink1);
+        final Button startButton = (Button) findViewById(R.id.Start_Button);
 
         // Capture button clicks
-        button.setOnClickListener(new OnClickListener() {
+        startButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                // Start NewActivity.class
-
-
                 Intent myIntent = new Intent(MainActivity.this,
-                       DisplacementActivity.class);
+                        DisplacementActivity.class);
                 startActivity(myIntent);
             }
         });
 
-        final Button buttonSpeed = (Button) findViewById(R.id.txtLink2);
-
-        // Capture button clicks
-        buttonSpeed.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-
-
-                Intent myIntent = new Intent(MainActivity.this,
-                        SpeedActivity.class);
-                startActivity(myIntent);
-            }
-        });
-
-        final Button buttonVelocity = (Button) findViewById(R.id.txtLink3);
-
-        // Capture button clicks
-        buttonVelocity.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-
-
-                Intent myIntent = new Intent(MainActivity.this,
-                        VelocityActivity.class);
-                startActivity(myIntent);
-            }
-        });
-
-        final Button buttonAcceleration = (Button) findViewById(R.id.txtLink4);
-
-        // Capture button clicks
-        buttonAcceleration.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-
-
-                Intent myIntent = new Intent(MainActivity.this,
-                        AccelerationActivity.class);
-                startActivity(myIntent);
-            }
-        });
-
-        final Button button2D = (Button) findViewById(R.id.txtLink7);
-
-        // Capture button clicks
-        button2D.setOnClickListener(new OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start NewActivity.class
-
-
-                Intent myIntent = new Intent(MainActivity.this,
-                        TwoDMotionActivity.class);
-                startActivity(myIntent);
-            }
-        });
     }
 
 
@@ -113,14 +50,68 @@ public class MainActivity extends ActionBarActivity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        //int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        //if (id == R.id.action_settings) {
+        //    return true;
+        //}
 
-        return super.onOptionsItemSelected(item);
+        //return super.onOptionsItemSelected(item);
+
+        Toast.makeText(getApplicationContext(), item.getTitle() + " selected", Toast.LENGTH_SHORT).show();
+
+        switch (item.getItemId()) {
+            case R.id.displacement_menu:
+                Intent myIntent = new Intent(MainActivity.this,
+                        DisplacementActivity.class);
+                startActivity(myIntent);
+                break;
+            case R.id.speed_menu:
+                Intent myIntent1 = new Intent(MainActivity.this,
+                        SpeedActivity.class);
+                startActivity(myIntent1);
+                break;
+
+            case R.id.velocity_menu:
+                Intent myIntent2 = new Intent(MainActivity.this,
+                        VelocityActivity.class);
+                startActivity(myIntent2);
+                break;
+
+            case R.id.acceleration_menu:
+                Intent myIntent3 = new Intent(MainActivity.this,
+                        AccelerationActivity.class);
+                startActivity(myIntent3);
+                break;
+
+            case R.id.oneD_Motion_menu:
+                Intent myIntent4 = new Intent(MainActivity.this,
+                        AccelerationActivity.class);
+                startActivity(myIntent4);
+                break;
+
+            case R.id.twoD_Motion_menu:
+                Intent myIntent5 = new Intent(MainActivity.this,
+                        TwoDMotionActivity.class);
+                startActivity(myIntent5);
+                break;
+
+            case R.id.formulas_menu:
+                Intent myIntent6 = new Intent(MainActivity.this,
+                        TwoDMotionActivity.class);
+                startActivity(myIntent6);
+                break;
+
+            case R.id.review_menu:
+                Intent myIntent7 = new Intent(MainActivity.this,
+                        TwoDMotionActivity.class);
+                startActivity(myIntent7);
+                break;
+
+
+        }
+        return true;
+
     }
 }
-

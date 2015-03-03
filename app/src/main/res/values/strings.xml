@@ -17,6 +17,15 @@
     <string name="Formulas_text">Formulas</string>
     <string name="Review_text">Review</string>
 
+
+
+    <string name="hometext">
+ Please click the Start button to begin. You may select the menu to choose a topic.
+    </string>
+
+
+
+
     <string name="question">
         A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
     </string>

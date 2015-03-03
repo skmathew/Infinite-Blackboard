@@ -1,6 +1,50 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+
+      <item
+        android:id="@+id/displacement_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="Displacement"
+        />
+    <item
+        android:id="@+id/speed_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="Speed"
+        />
+    <item
+        android:id="@+id/velocity_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="Velocity"
+        />
+    <item
+        android:id="@+id/acceleration_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="Acceleration"
+        />
+    <item
+        android:id="@+id/oneD_Motion_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="1-D Motion"
+        />
+
+    <item
+        android:id="@+id/twoD_Motion_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="2-D Motion"
+        />
+
+    <item
+        android:id="@+id/formulas_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="Formulas"
+        />
+
+    <item
+        android:id="@+id/review_menu"
+        android:icon="@drawable/ic_launcher"
+        android:title="Review"
+        />
+
 </menu>
