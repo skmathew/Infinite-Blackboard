@@ -24,6 +24,8 @@ public class MainActivity extends ActionBarActivity {
 
         final Button startButton = (Button) findViewById(R.id.Start_Button);
 
+
+
         // Capture button clicks
         startButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {

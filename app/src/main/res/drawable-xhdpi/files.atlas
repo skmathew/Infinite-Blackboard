@@ -1,0 +1,120 @@
+
+comp01.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_1
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp02.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_2
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp03.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_3
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp04.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_4
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp05.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_5
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp06.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_6
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp07.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_7
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp08.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_8
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp09.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp0_9
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
+
+comp10.png
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+comp1_0
+  rotate: false
+  xy: 1,1
+  size: 1920, 1080
+  orig: 1920, 1080
+  offset: 0, 0
+  index: -1
