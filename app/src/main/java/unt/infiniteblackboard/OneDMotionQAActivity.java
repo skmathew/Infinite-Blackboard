@@ -20,18 +20,18 @@ public class OneDMotionQAActivity extends ActionBarActivity {
         setContentView(R.layout.activity_one_dmotion_qa);
 
         final Button submitButton = (Button) findViewById(R.id.submit_button);
-        final Button homeButton = (Button) findViewById(R.id.Home_button);
+        final Button nextButton = (Button) findViewById(R.id.Next_Button);
         final Button previousButton = (Button) findViewById(R.id.Previous_Button);
 
         // Capture button clicks
-        homeButton.setOnClickListener(new View.OnClickListener() {
+        nextButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
 
 
                 Intent myIntent = new Intent(OneDMotionQAActivity.this,
-                        MainActivity.class);
+                        TwoDMotionActivity.class);
                 startActivity(myIntent);
             }
         });
