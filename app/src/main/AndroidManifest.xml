@@ -68,6 +68,22 @@
             android:name=".VelocityQAActivity"
             android:label="@string/title_activity_velocity_qa" >
         </activity>
+        <activity
+            android:name=".OneDMotionActivity"
+            android:label="@string/title_activity_one_dmotion"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="unt.infiniteblackboard.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OneDMotionQAActivity"
+            android:label="@string/title_activity_one_dmotion_qa"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="unt.infiniteblackboard.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
