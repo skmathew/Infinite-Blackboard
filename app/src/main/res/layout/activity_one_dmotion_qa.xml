@@ -12,7 +12,7 @@
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:id="@+id/imageView"
-            android:src="@drawable/motion1d"
+            android:src="@drawable/j"
             />
 
         <TextView
@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="@string/motion1d_question"
             android:textStyle="bold|italic"
-            android:id="@+id/" />
+            android:id="@+id/aa" />
 
         <RadioGroup
             android:layout_width="fill_parent"
