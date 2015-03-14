@@ -91,7 +91,7 @@ public class MainActivity extends ActionBarActivity {
 
             case R.id.oneD_Motion_menu:
                 Intent myIntent4 = new Intent(MainActivity.this,
-                        AccelerationActivity.class);
+                        OneDMotionActivity.class);
                 startActivity(myIntent4);
                 break;
 

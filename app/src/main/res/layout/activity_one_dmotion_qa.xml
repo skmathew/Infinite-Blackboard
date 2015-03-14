@@ -12,16 +12,14 @@
             android:layout_width="wrap_content"
             android:layout_height="250dp"
             android:id="@+id/imageView"
-            android:src="@drawable/j"
-            />
+            android:src="@drawable/motion1d" />
 
         <TextView
 
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/motion1d_question"
-            android:textStyle="bold|italic"
-            android:id="@+id/aa" />
+            android:textStyle="bold|italic" />
 
         <RadioGroup
             android:layout_width="fill_parent"
