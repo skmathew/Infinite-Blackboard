@@ -1,48 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:weightSum="1">
 
 
-
-    <LinearLayout
-        android:orientation="vertical"
+    <ImageView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:weightSum="1"
-        android:id="@+id/theLayout"
-        android:background="#F2F3F4">
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:background="@drawable/comp07"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40dp" />
 
 
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="250dp"
-            android:id="@+id/imageView"
-            android:src="@drawable/homepage"
-            />
+    <TextView
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="@string/app_name"
-            android:id="@+id/textView"
-            android:layout_gravity="center_horizontal"
-            android:textSize="40dp" />
-
-
-        <TextView
-
-
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/hometext"
-            android:textStyle="bold|italic" />
-
-    </LinearLayout>
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hometext"
+        android:textStyle="bold|italic" />
 
 
 
@@ -60,7 +51,9 @@
 
 
 
+</LinearLayout>
 
-</RelativeLayout>
 
+
+</ScrollView>
 

@@ -10,12 +10,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 
-
 public class DisplacementActivity extends ActionBarActivity {
 
     private TextToSpeech tts;
     ImageView imageView;
-    Integer[] image = { R.drawable.comp01, R.drawable.comp15,R.drawable.comp30 };
     private AnimationDrawable mAnim;
 
 
@@ -30,16 +28,6 @@ public class DisplacementActivity extends ActionBarActivity {
         imageView.setBackgroundResource(R.drawable.view_animation);
 
         mAnim = (AnimationDrawable) imageView.getBackground();
-        //mAnim.start();
-
-        //for(int i=0;i<5000;i++){
-        //imageView.startAnimation(AnimationUtils.loadAnimation(DisplacementActivity.this, android.R.anim.slide_out_right));
-        //imageView.setImageResource(image[i]);
-        //}
-
-
-       // String question = getResources().getString(R.string.question);
-        //speakWords(question);
 
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
@@ -92,6 +80,7 @@ public class DisplacementActivity extends ActionBarActivity {
             mAnim.start();
         }
     }
+
 
 
 
