@@ -33,6 +33,8 @@ public class MainActivity extends ActionBarActivity {
                 Intent myIntent = new Intent(MainActivity.this,
                         DisplacementActivity.class);
                 startActivity(myIntent);
+
+
             }
         });
 

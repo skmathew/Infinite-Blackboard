@@ -27,6 +27,7 @@ public class DisplacementActivity extends ActionBarActivity {
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation);
 
+
         mAnim = (AnimationDrawable) imageView.getBackground();
 
         final Button button = (Button) findViewById(R.id.Home_button);
