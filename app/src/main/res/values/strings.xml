@@ -38,6 +38,10 @@
         Distance is scalar quantity meaning it only has magnitude. The distance equals the total distance covered from point A to B. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance would the circumference of the circle.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
     </string>
 
+    <string name="displacementquest">
+        What is the displacement of the cross-country team if they begin at the school, run 10 miles and finish back at the school?
+     </string>string>
+
     <string name="speed1">
         In everyday use and in kinematics, the speed of an object is the magnitude of its velocity (the rate of change of its position).
     </string>

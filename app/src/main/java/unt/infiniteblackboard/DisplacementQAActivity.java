@@ -1,6 +1,7 @@
 package unt.infiniteblackboard;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
@@ -9,13 +10,11 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.Locale;
 
 
-public class DisplacementActivity extends ActionBarActivity {
+public class DisplacementQAActivity extends ActionBarActivity {
 
     TextToSpeech tts;
     ImageView imageView;
@@ -24,39 +23,16 @@ public class DisplacementActivity extends ActionBarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_displacement);
-
-        TextView Textv1 = (TextView) findViewById(R.id.displacement1);
-        final String texts1 = Textv1.getText().toString();
-        TextView Textv2 = (TextView) findViewById(R.id.displacement2);
-        final String texts2 = Textv2.getText().toString();
+        setContentView(R.layout.activity_displacement_qa);
 
 
 
         imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setBackgroundResource(R.drawable.view_animation);
+        imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
 
 
-        //text to speech code
-        tts = new TextToSpeech(DisplacementActivity.this, new TextToSpeech.OnInitListener() {
-            public void onInit(int status) {
-                if (status == TextToSpeech.SUCCESS) {
-                    tts.setLanguage(Locale.US);
-
-                    tts.speak(texts1,TextToSpeech.QUEUE_ADD,null);
-                    tts.speak(texts2,TextToSpeech.QUEUE_ADD,null);
-                } else {
-                    Toast.makeText(getApplicationContext(),
-                            "Feature not Supported in Your Device",
-                            Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        //text to speech code end
-
-
+        final Button submitButton = (Button) findViewById(R.id.submit_button);
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
         final Button button2 = (Button) findViewById(R.id.Next_Button);
@@ -67,7 +43,7 @@ public class DisplacementActivity extends ActionBarActivity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementActivity.this,
+                Intent myIntent = new Intent(DisplacementQAActivity.this,
                         MainActivity.class);
                 startActivity(myIntent);
             }
@@ -78,20 +54,44 @@ public class DisplacementActivity extends ActionBarActivity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementActivity.this,
-                        MainActivity.class);
+                Intent myIntent = new Intent(DisplacementQAActivity.this,
+                        DisplacementActivity.class);
                 startActivity(myIntent);
             }
         });
+
 
         // Capture button clicks
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementActivity.this,
-                        DisplacementQAActivity.class);
+                Intent myIntent = new Intent(DisplacementQAActivity.this,
+                        SpeedActivity.class);
                 startActivity(myIntent);
+            }
+        });
+
+
+        // Capture radio button clicks
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                TextView result = (TextView) findViewById(R.id.textView2);
+
+                result.setVisibility(View.VISIBLE);
+
+                RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton);
+
+                if(correctAnswer.isChecked())
+                {
+                    result.setText("Correct!");
+                    result.setTextColor(Color.GREEN);
+                }
+                else
+                {
+                    result.setText("Incorrect! Try again!");
+                    result.setTextColor(Color.RED);
+                }
             }
         });
 
@@ -107,8 +107,8 @@ public class DisplacementActivity extends ActionBarActivity {
 
         if(tts !=null)
         {
-             tts.stop();
-             tts.shutdown();
+            tts.stop();
+            tts.shutdown();
         }
         super.onPause();
 
