@@ -24,7 +24,7 @@ android:layout_height="fill_parent">
 
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/acceleration2"
+        android:text="Acceleration, in physics, is the rate of change of velocity of an object. An object's acceleration is the net result of any and all forces acting on the object, as described by Newton's Second Law."
         android:textStyle="bold|italic"
         android:id="@+id/acceleration2" />
 

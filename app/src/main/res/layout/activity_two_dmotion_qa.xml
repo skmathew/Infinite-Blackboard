@@ -20,7 +20,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/twod_motionQuestion"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic"
+             />
 
         <RadioGroup
             android:layout_width="fill_parent"

@@ -71,10 +71,12 @@
     </string>
 
     <string name="acceleration2">
+        "Acceleration, in physics, is the rate of change of velocity of an object. An object's acceleration is the net result of any and all forces acting on the object, as described by Newton's Second Law."
 
     </string>
 
     <string name="accelerationQuestion">
+        A car starts from rest and accelerates uniformly over a time of 5.21 seconds for a distance of 110 m. Determine the acceleration of the car.
 
     </string>
 
