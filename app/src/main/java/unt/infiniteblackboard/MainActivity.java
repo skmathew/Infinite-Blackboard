@@ -14,6 +14,8 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
     private static TextView txtLink1;
+    public static final int TOTAL_QUESTION = 6;
+    public static final String PREF_QUESTIONS_CORRECT = "pref_questions_correct";
 
 
 
@@ -21,6 +23,8 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ScoreKeeper.clearScore(this);
 
         final Button startButton = (Button) findViewById(R.id.Start_Button);
 
