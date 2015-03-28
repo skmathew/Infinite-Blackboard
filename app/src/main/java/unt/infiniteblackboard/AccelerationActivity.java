@@ -3,20 +3,32 @@
 package unt.infiniteblackboard;
 
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+
 
 
 public class AccelerationActivity extends ActionBarActivity {
+
+    TextToSpeech tts;
+    ImageView imageView;
+    private AnimationDrawable mAnim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_acceleration);
+
+        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setBackgroundResource(R.drawable.view_animation2);
+        mAnim = (AnimationDrawable) imageView.getBackground();
 
 
 
@@ -67,6 +79,33 @@ public class AccelerationActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_acceleration, menu);
         return true;
+    }
+    @Override
+    protected  void onPause() {
+        super.onPause();
+        if (mAnim.isRunning()){
+            mAnim.stop();
+        }
+
+        if(tts !=null)
+        {
+            tts.stop();
+            tts.shutdown();
+        }
+        super.onPause();
+
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocused)
+    {
+        super.onWindowFocusChanged(hasFocused);
+        if(hasFocused){
+            mAnim.start();
+        }
+
+
+
     }
 
     @Override
