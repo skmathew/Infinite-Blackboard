@@ -48,7 +48,7 @@ public class DisplacementActivity extends ActionBarActivity {
                     tts.speak(texts2,TextToSpeech.QUEUE_ADD,null);
                 } else {
                     Toast.makeText(getApplicationContext(),
-                            "Feature not Supported in Your Device",
+                            "Feature not Supported in Your Device!",
                             Toast.LENGTH_SHORT).show();
                 }
             }
@@ -97,7 +97,7 @@ public class DisplacementActivity extends ActionBarActivity {
 
     }
 
-
+//
     @Override
     protected  void onPause() {
         super.onPause();
