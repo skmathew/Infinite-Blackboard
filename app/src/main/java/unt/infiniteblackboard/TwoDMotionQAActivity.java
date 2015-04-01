@@ -61,18 +61,23 @@ public class TwoDMotionQAActivity extends ActionBarActivity {
 
                 RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton3);
 
+                Button disableSubmit = (Button) findViewById(R.id.submit_button);
+
+                disableSubmit.setEnabled(false);
+
                 if(correctAnswer.isChecked())
                 {
                     result.setText("Correct!");
+
                     result.setTextColor(Color.GREEN);
-                    ScoreKeeper.addPoint(getApplicationContext(), AccelerationQAActivity.class.getSimpleName());
+                    ScoreKeeper.addPoint(getApplicationContext(), TwoDMotionQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                 }
                 else
                 {
                     result.setText("Incorrect! Try again!");
                     result.setTextColor(Color.RED);
-                    ScoreKeeper.subtractPoint(getApplicationContext(), AccelerationQAActivity.class.getSimpleName());
+                    ScoreKeeper.subtractPoint(getApplicationContext(), TwoDMotionQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                 }
             }

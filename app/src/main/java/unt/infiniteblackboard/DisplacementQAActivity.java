@@ -87,6 +87,11 @@ public class DisplacementQAActivity extends ActionBarActivity {
                 {
                     result.setText("Correct!");
                     result.setTextColor(Color.GREEN);
+
+                    Button disableSubmit = (Button) findViewById(R.id.submit_button);
+
+                    disableSubmit.setEnabled(false);
+
                     ScoreKeeper.addPoint(getApplicationContext(), DisplacementQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
 
