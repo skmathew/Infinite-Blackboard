@@ -17,6 +17,8 @@ import java.util.Locale;
 
 public class DisplacementActivity extends ActionBarActivity {
 
+
+
     TextToSpeech tts;
     ImageView imageView;
     private AnimationDrawable mAnim;
@@ -38,6 +40,9 @@ public class DisplacementActivity extends ActionBarActivity {
         mAnim = (AnimationDrawable) imageView.getBackground();
 
 
+
+
+
         //text to speech code
         tts = new TextToSpeech(DisplacementActivity.this, new TextToSpeech.OnInitListener() {
             public void onInit(int status) {
@@ -55,6 +60,9 @@ public class DisplacementActivity extends ActionBarActivity {
         });
 
         //text to speech code end
+
+
+
 
 
         final Button button = (Button) findViewById(R.id.Home_button);
@@ -96,6 +104,8 @@ public class DisplacementActivity extends ActionBarActivity {
         });
 
     }
+
+
 
 //
     @Override

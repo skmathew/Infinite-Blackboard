@@ -34,6 +34,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
         final Button button2 = (Button) findViewById(R.id.Next_Button);
+        button2.setEnabled(false);
 
         final TextView numberCorrectText = (TextView) findViewById(R.id.correct_count_textview);
         ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
@@ -89,6 +90,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
                     result.setTextColor(Color.GREEN);
                     ScoreKeeper.addPoint(getApplicationContext(), DisplacementQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+                    button2.setEnabled(true);
 
                 }
                 else
@@ -97,6 +99,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
                     result.setTextColor(Color.RED);
                     ScoreKeeper.subtractPoint(getApplicationContext(), DisplacementQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+              
 
                 }
             }
