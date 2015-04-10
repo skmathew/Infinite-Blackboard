@@ -40,8 +40,7 @@ public class DisplacementActivity extends ActionBarActivity {
 
 
         textView = (TextView) findViewById(R.id.myImageViewText);
-
-        textView.setText(Html.fromHtml("Equation = " + getString(R.string.test_string)));
+        textView.setText(Html.fromHtml(getString(R.string.disp_bb)));
 
 
 
