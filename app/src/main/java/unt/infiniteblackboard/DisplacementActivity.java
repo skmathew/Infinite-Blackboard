@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.ActionBarActivity;
 import android.text.Html;
+import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
@@ -30,9 +31,6 @@ public class DisplacementActivity extends ActionBarActivity {
 
         TextView Textv1 = (TextView) findViewById(R.id.displacement1);
         final String texts1 = Textv1.getText().toString();
-        TextView Textv2 = (TextView) findViewById(R.id.displacement2);
-        final String texts2 = Textv2.getText().toString();
-
 
 
         imageView = (ImageView) findViewById(R.id.imageView);
@@ -44,6 +42,11 @@ public class DisplacementActivity extends ActionBarActivity {
         textView = (TextView) findViewById(R.id.myImageViewText);
 
         textView.setText(Html.fromHtml("Equation = " + getString(R.string.test_string)));
+
+
+
+        TextView tv = (TextView) findViewById(R.id.displacement1);
+        tv.setMovementMethod(new ScrollingMovementMethod());
 
         /*
 

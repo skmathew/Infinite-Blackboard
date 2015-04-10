@@ -9,48 +9,41 @@
         android:layout_height="wrap_content"
         android:weightSum="1">
 
-
-
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
-        <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="250dp"
-            android:id="@+id/imageView"
-            />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imageView"
+                />
 
-        <TextView
-            android:id="@+id/myImageViewText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-            android:layout_alignTop="@+id/imageView"
-            android:layout_alignLeft="@+id/imageView"
-            android:layout_alignRight="@+id/imageView"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_margin="5dp"
-            android:gravity="center"
-            android:text="@string/test_string"
-            android:textColor="#FEFEFA" />
+                android:layout_alignTop="@+id/imageView"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="@string/test_string"
+                android:textColor="#FEFEFA" />
 
         </RelativeLayout>
 
 
 
 
-        <TextView
-            android:id="@+id/displacement1"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="@string/displacement1"
-            android:textStyle="bold|italic" />
-
-        <TextView
-            android:id="@+id/displacement2"
-            android:layout_width="fill_parent"
+        <TextView style="?android:textAppearanceMedium"
+            android:lineSpacingMultiplier="1.2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/displacement2"
+
+            android:id="@+id/displacement1"
+            android:text="@string/displacement1"
             android:textStyle="bold|italic" />
 
 
@@ -80,10 +73,9 @@
         </Button>
 
 
-
-
     </LinearLayout>
 
 
 
 </ScrollView>
+

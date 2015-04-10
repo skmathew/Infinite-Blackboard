@@ -37,6 +37,8 @@
 
     <string name="displacement1">
         Let’s understand the differences between distance and displacement. Displacement is vector quantity, meaning it has magnitude and a direction. The displacement of an object that moves from point A to point B is a vector whose tail is at A and whose tip is at B.
+            Distance is scalar quantity meaning it only has magnitude. The distance equals the total distance covered from point A to B. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance would the circumference of the circle.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
+
     </string>
 
     <string name="displacement2">
