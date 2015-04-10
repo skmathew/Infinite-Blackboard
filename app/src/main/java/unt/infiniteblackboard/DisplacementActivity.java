@@ -5,14 +5,13 @@ import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Html;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.Locale;
 
 
 public class DisplacementActivity extends ActionBarActivity {
@@ -21,6 +20,7 @@ public class DisplacementActivity extends ActionBarActivity {
 
     TextToSpeech tts;
     ImageView imageView;
+    TextView textView;
     private AnimationDrawable mAnim;
 
     @Override
@@ -36,12 +36,16 @@ public class DisplacementActivity extends ActionBarActivity {
 
 
         imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setBackgroundResource(R.drawable.view_animation);
+        imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
 
 
 
+        textView = (TextView) findViewById(R.id.myImageViewText);
 
+        textView.setText(Html.fromHtml("Equation = " + getString(R.string.test_string)));
+
+        /*
 
         //text to speech code
         tts = new TextToSpeech(DisplacementActivity.this, new TextToSpeech.OnInitListener() {
@@ -62,7 +66,7 @@ public class DisplacementActivity extends ActionBarActivity {
         //text to speech code end
 
 
-
+*/
 
 
         final Button button = (Button) findViewById(R.id.Home_button);
@@ -139,10 +143,14 @@ public class DisplacementActivity extends ActionBarActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        // Inflate the menu items for use in the action bar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.activity_displacement, menu);
+        return super.onCreateOptionsMenu(menu);
     }
+
+
+
 
 
 

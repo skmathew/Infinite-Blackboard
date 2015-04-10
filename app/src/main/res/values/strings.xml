@@ -24,6 +24,11 @@
     </string>
 
 
+    <string name="test_string">
+    <![CDATA[ X<sup><small>2&theta</small></sup>&frac13; ]]>
+    </string>
+
+
 
 
     <string name="question">
