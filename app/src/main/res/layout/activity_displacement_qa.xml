@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <LinearLayout
@@ -84,27 +84,37 @@
             android:text="Submit"
             android:id="@+id/submit_button" />
 
-        <Button
-            android:id="@+id/Previous_Button"
-            android:layout_width="fill_parent"
-            android:text="Prev"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
 
-        <Button
-            android:text="Home"
-            android:id="@+id/Home_button"
-            android:layout_toRightOf="@+id/Previous_Button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:text="Next"
-            android:id="@+id/Next_Button"
-            android:layout_toRightOf="@+id/Home_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
     </LinearLayout>
-</ScrollView>
+
+    <Button
+        android:id="@+id/Previous_Button"
+        android:layout_width="fill_parent"
+        android:text="@string/Prev_text"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_above="@+id/Home_button"
+        >
+    </Button>
+    <Button
+        android:text="@string/Home_text"
+        android:id="@+id/Home_button"
+        android:layout_above="@+id/Next_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        >
+    </Button>
+
+    <Button
+        android:text="@string/Next_text"
+        android:id="@+id/Next_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        >
+    </Button>
+
+</RelativeLayout>

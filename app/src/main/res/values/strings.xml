@@ -18,6 +18,17 @@
     <string name="Review_text">Review</string>
 
 
+    <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
+    <string name="Vel5_eq"><![CDATA[ Distance= Velocity x time ]]></string>
+    <string name="Vel_1">Lets start with the definition of velocity.</string>
+    <string name="Vel_2">We say that velocity is defined as distance over time.</string>
+    <string name="Vel_3">Of course we mean the distance traveled over the time it takes to get there. So it\'s a change of time.</string>
+    <string name="Vel_4">We will see why it\'s important to think in terms of "the change of" in the definition when we talk about acceleration.</string>
+    <string name="Vel_5">Now, this certainly one way of defining velocity, but there is another way of saying the same thing.</string>
+    <string name="Vel_6">We could also say that the distance traveled is proportional to the time of travel, and velocity is the proportionality constant.</string>
+    <string name="Vel_7">Thinking of distance as the product of velocity and time allows us to visualize this idea with a picture we can draw on the blackbord.</string>
+    <string name="Vel_8">Let\'s start with trying to think about velocity in a different direction.</string>
+
 
     <string name="hometext">
     Please click the Start button to begin.
@@ -41,8 +52,8 @@
     </string>
 
     <string name="displacement1">
-        Let’s understand the differences between distance and displacement. Displacement is vector quantity, meaning it has magnitude and a direction. The displacement of an object that moves from point A to point B is a vector whose tail is at A and whose tip is at B.
-            Distance is scalar quantity meaning it only has magnitude. The distance equals the total distance covered from point A to B. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance would the circumference of the circle.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
+        Let’s understand the differences between distance and displacement. Displacement is vector quantity, meaning it has magnitude and a direction.
+            Distance is scalar quantity meaning it only has magnitude. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance equals the total distance covered from point A to B.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
 
     </string>
 
