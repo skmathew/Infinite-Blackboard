@@ -27,7 +27,7 @@ public class AccelerationActivity extends ActionBarActivity {
         setContentView(R.layout.activity_acceleration);
 
         imageView = (ImageView) findViewById(R.id.imageView);
-        imageView.setBackgroundResource(R.drawable.view_animation2);
+        imageView.setBackgroundResource(R.drawable.view_animation_graph);
         mAnim = (AnimationDrawable) imageView.getBackground();
 
 
