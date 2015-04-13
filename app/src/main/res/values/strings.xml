@@ -19,6 +19,7 @@
 
     <string-array name="sections">
     <item>Constant Velocity</item>
+    <item>Constant Velocity Q/A</item>
     <item>Speed</item>
     <item>Velocity</item>
     <item>Acceleration</item>

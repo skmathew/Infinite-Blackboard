@@ -6,8 +6,8 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,23 +41,32 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-        ScoreKeeper.clearScore(this);
+        mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
+        {
+            @Override
+            public void onItemClick(AdapterView<?> a, View v, int position, long id)
+            {
 
-        final Button startButton = (Button) findViewById(R.id.Start_Button);
+                switch(position)
+                {
+                    case 0:
+                        Intent intent = new Intent(MainActivity.this, DisplacementActivity.class);
+                        startActivity(intent);
+                        break;
 
+                    case 1:
+                        intent = new Intent(MainActivity.this, DisplacementQAActivity.class);
+                        startActivity(intent);
+                        break;
 
-
-        // Capture button clicks
-        startButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                Intent myIntent = new Intent(MainActivity.this,
-                        DisplacementActivity.class);
-                startActivity(myIntent);
-
+                }
 
             }
         });
+
+
+
+        ScoreKeeper.clearScore(this);
     }
 
 

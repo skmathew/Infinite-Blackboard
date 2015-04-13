@@ -48,14 +48,15 @@
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="200dp">
-        <TextView style="?android:textAppearanceMedium"
-            android:lineSpacingMultiplier="1.2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView1"
-            android:text="@string/displacement1"
-            android:textStyle="bold|italic" />
+            <TextView style="?android:textAppearanceMedium"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:text="@string/displacement1"
+                android:textStyle="bold|italic" />
         </ScrollView>
+
 
 
 

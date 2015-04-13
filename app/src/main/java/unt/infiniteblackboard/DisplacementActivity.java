@@ -34,22 +34,22 @@ public class DisplacementActivity extends ActionBarActivity {
         imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
 
-
-
         textView = (TextView) findViewById(R.id.myImageViewText);
         textView.setText(Html.fromHtml(getString(R.string.disp_bb)));
 
-
-
         TextView tv = (TextView) findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
-
-
 
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
         final Button button2 = (Button) findViewById(R.id.Next_Button);
 
+        /*
+        textView = (TextView) findViewById(R.id.textView1);
+        Typeface custom_font = Typeface.createFromAsset(getAssets(),
+                "fonts/Erika Type.ttf");
+        textView.setTypeface(custom_font);
+        */
 
 
         // Capture button clicks home
