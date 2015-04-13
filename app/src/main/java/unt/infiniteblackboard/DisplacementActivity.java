@@ -30,7 +30,6 @@ public class DisplacementActivity extends ActionBarActivity {
         TextView Textv1 = (TextView) findViewById(R.id.textView1);
         final String texts1 = Textv1.getText().toString();
 
-
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
@@ -46,32 +45,162 @@ public class DisplacementActivity extends ActionBarActivity {
         tv.setMovementMethod(new ScrollingMovementMethod());
 
 
+
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
         final Button button2 = (Button) findViewById(R.id.Next_Button);
 
 
 
-        // Capture button clicks
+        // Capture button clicks home
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
+                        // Start NewActivity.class
+                        Intent myIntent = new Intent(DisplacementActivity.this,
+                                MainActivity.class);
+                        startActivity(myIntent);
 
-                // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementActivity.this,
-                        MainActivity.class);
-                startActivity(myIntent);
+
             }
         });
 
-        // Capture button clicks
+        // Capture button clicks back click
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementActivity.this,
-                        MainActivity.class);
-                startActivity(myIntent);
+                switch (count){
+                    case 1:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.disp_bb)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.displacement1)));
+                        break;
+
+                    case 2:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(getString(R.string.Vel_1));
+                        break;
+
+                    case 3:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_2)));
+                        break;
+
+
+                    case 4:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_3)));
+                        break;
+
+
+                    case 5:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_4)));
+                        break;
+
+                    case 6:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_5)));
+                        break;
+
+
+                    case 7:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_6)));
+                        break;
+
+
+                    case 8:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_7)));
+                        break;
+
+
+                    default:
+                        // Start NewActivity.class
+                        Intent myIntent = new Intent(DisplacementActivity.this,
+                                MainActivity.class);
+                        startActivity(myIntent);
+                }
             }
         });
 
@@ -79,7 +208,7 @@ public class DisplacementActivity extends ActionBarActivity {
 
 
 
-        // Capture button clicks
+        // Capture button clicks next button
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
@@ -89,6 +218,9 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
@@ -101,11 +233,14 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_2)));
+                        textView.setText(getString(R.string.Vel_2));
                         break;
 
                     case 2:
@@ -113,6 +248,9 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
@@ -126,6 +264,9 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
@@ -139,6 +280,9 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
@@ -151,6 +295,9 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
@@ -164,6 +311,9 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
@@ -177,21 +327,15 @@ public class DisplacementActivity extends ActionBarActivity {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_8)));
                         break;
-
-
-
-
-
-
-
-
-
 
 
                     default:
@@ -203,6 +347,7 @@ public class DisplacementActivity extends ActionBarActivity {
 
             }
         });
+
 
     }
 
@@ -222,12 +367,9 @@ public class DisplacementActivity extends ActionBarActivity {
     public void onWindowFocusChanged(boolean hasFocused)
     {
         super.onWindowFocusChanged(hasFocused);
-        if(hasFocused){
+        if(hasFocused) {
             mAnim.start();
         }
-
-
-
     }
 
 
@@ -238,8 +380,6 @@ public class DisplacementActivity extends ActionBarActivity {
         inflater.inflate(R.menu.activity_displacement, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
-
 
 
 

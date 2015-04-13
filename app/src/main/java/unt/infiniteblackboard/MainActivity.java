@@ -6,9 +6,14 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -16,6 +21,8 @@ public class MainActivity extends ActionBarActivity {
     private static TextView txtLink1;
     public static final int TOTAL_QUESTION = 6;
     public static final String PREF_QUESTIONS_CORRECT = "pref_questions_correct";
+    private ListView mainListView ;
+    private ArrayAdapter<String> listAdapter ;
 
 
 
@@ -23,6 +30,16 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Find the ListView resource.
+        mainListView = (ListView) findViewById( R.id.mainListView );
+        String[] sections = getResources().getStringArray(R.array.sections);
+        ArrayList<String> sectionList = new ArrayList<String>();
+        sectionList.addAll( Arrays.asList(sections) );
+        // Create ArrayAdapter using the planet list.
+        listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, sectionList);
+        mainListView.setAdapter( listAdapter );
+
+
 
         ScoreKeeper.clearScore(this);
 

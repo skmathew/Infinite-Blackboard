@@ -36,11 +36,18 @@ android:layout_height="fill_parent">
         android:text="@string/hometext"
         android:textStyle="bold|italic" />
 
+    <ListView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mainListView">
+    </ListView>
+
 
 
 
 
 </LinearLayout>
+
+
     <Button
         android:text="Start"
         android:id="@+id/Start_Button"
@@ -48,6 +55,14 @@ android:layout_height="fill_parent">
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:layout_alignParentBottom="true"
+
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
         >
     </Button>
 

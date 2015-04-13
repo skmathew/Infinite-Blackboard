@@ -17,6 +17,23 @@
     <string name="Formulas_text">Formulas</string>
     <string name="Review_text">Review</string>
 
+    <string-array name="sections">
+    <item>Constant Velocity</item>
+    <item>Speed</item>
+    <item>Velocity</item>
+    <item>Acceleration</item>
+    <item>1-D Motion</item>
+    <item>2-D Motion</item>
+    <item>Speed</item>
+    <item>Velocity</item>
+    <item>Acceleration</item>
+    <item>1-D Motion</item>
+    <item>2-D Motion</item>
+    </string-array>
+
+
+
+
 
     <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
     <string name="Vel5_eq"><![CDATA[ Distance= Velocity x time ]]></string>
