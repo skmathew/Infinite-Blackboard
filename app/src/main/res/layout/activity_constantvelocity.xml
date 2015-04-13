@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".DisplacementActivity">
+    tools:context=".ConstantVelocityActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,8 +19,6 @@
                 android:layout_height="250dp"
                 android:id="@+id/imageView"
                 />
-
-            <include layout="@layout/score_tracker_layout"/>
 
 
             <TextView
@@ -38,6 +36,14 @@
                 android:textColor="#FEFEFA"
                 android:textStyle="italic"
                 />
+            <ImageView
+                android:id="@+id/imageViewtop"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:gravity = "top|left"
+                />
 
         </RelativeLayout>
 
@@ -53,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView1"
-                android:text="@string/displacement1"
+                android:text="@string/Vel"
                 android:textStyle="bold|italic" />
         </ScrollView>
 

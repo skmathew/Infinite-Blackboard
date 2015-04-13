@@ -20,6 +20,8 @@
     <string-array name="sections">
     <item>Constant Velocity</item>
     <item>Constant Velocity Q/A</item>
+    <item>Average Velocity</item>
+    <item>Average Velocity Q/A</item>
     <item>Speed</item>
     <item>Velocity</item>
     <item>Acceleration</item>
@@ -37,7 +39,8 @@
 
 
     <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
-    <string name="Vel5_eq"><![CDATA[ Distance= Velocity x time ]]></string>
+    <string name="Vel5_eq"><![CDATA[ Distance= Velocity * time ]]></string>
+    <string name="Vel">Welcome! I would like to help you better understand Constant Velocity.</string>
     <string name="Vel_1">Lets start with the definition of velocity.</string>
     <string name="Vel_2">We say that velocity is defined as distance over time.</string>
     <string name="Vel_3">Of course we mean the distance traveled over the time it takes to get there. So it\'s a change of time.</string>
@@ -46,6 +49,15 @@
     <string name="Vel_6">We could also say that the distance traveled is proportional to the time of travel, and velocity is the proportionality constant.</string>
     <string name="Vel_7">Thinking of distance as the product of velocity and time allows us to visualize this idea with a picture we can draw on the blackbord.</string>
     <string name="Vel_8">Let\'s start with trying to think about velocity in a different direction.</string>
+    <string name="Vel_9">Let\'s think of velocity as going upward. It\'s like the faster you go, the higher we are on the vertical axis.</string>
+    <string name="Vel_10">And then we think of time as going ogg to the right.</string>
+    <string name="Vel_11">Let\'s start with trying to think about velocity in a different direction.</string>
+    <string name="Vel_12">We can visualize all three things in just one picture drawn in two dimensions. Just as length as length times height is area in real space, velocity times time is distance in this particular way of looking at it.</string>
+    <string name="Vel_13">Let\'s look at an example. Suppose you are going 60 miles an hour. Of course that means you will go 60 miles in 60 minutes.</string>
+    <string name="Vel_14">... or one mile for each minute. Most people know that 60 miles per hour is also one mile per minute.</string>
+    <string name="Vel_15">But did you know that 60 miles per hour is also 88 feet per second?</string>
+    <string name="Vel_16">Anyway, we can think of this same velocity in terms of different distances...</string>
+    <string name="Vel_17">...depending on time. In a second you travel 88 feet.</string>
 
 
     <string name="hometext">
@@ -69,15 +81,6 @@
         A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
     </string>
 
-    <string name="displacement1">
-        Let’s understand the differences between distance and displacement. Displacement is vector quantity, meaning it has magnitude and a direction.
-            Distance is scalar quantity meaning it only has magnitude. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance equals the total distance covered from point A to B.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
-
-    </string>
-
-    <string name="displacement2">
-        Distance is scalar quantity meaning it only has magnitude. The distance equals the total distance covered from point A to B. If I started from point A and travels in a circular motion and ends back at position A the displacement would equal 0, where as the distance would the circumference of the circle.  Since the displacement is a vector quantity, it is not enough to say that the displacement is 100 meters: you must also state the direction of that displacement.
-    </string>
 
     <string name="displacementquest">
         What is the displacement of the cross-country team if they begin at the school, run 10 miles and finish back at the school?

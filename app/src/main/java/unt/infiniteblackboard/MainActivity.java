@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
         String[] sections = getResources().getStringArray(R.array.sections);
         ArrayList<String> sectionList = new ArrayList<String>();
         sectionList.addAll( Arrays.asList(sections) );
-        // Create ArrayAdapter using the planet list.
+        // Create ArrayAdapter
         listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, sectionList);
         mainListView.setAdapter( listAdapter );
 
@@ -50,12 +50,12 @@ public class MainActivity extends ActionBarActivity {
                 switch(position)
                 {
                     case 0:
-                        Intent intent = new Intent(MainActivity.this, DisplacementActivity.class);
+                        Intent intent = new Intent(MainActivity.this, ConstantVelocityActivity.class);
                         startActivity(intent);
                         break;
 
                     case 1:
-                        intent = new Intent(MainActivity.this, DisplacementQAActivity.class);
+                        intent = new Intent(MainActivity.this, ConstantVelocityQAActivity.class);
                         startActivity(intent);
                         break;
 
@@ -99,7 +99,7 @@ public class MainActivity extends ActionBarActivity {
         switch (item.getItemId()) {
             case R.id.displacement_menu:
                 Intent myIntent = new Intent(MainActivity.this,
-                        DisplacementActivity.class);
+                        ConstantVelocityActivity.class);
                 startActivity(myIntent);
                 break;
             case R.id.speed_menu:

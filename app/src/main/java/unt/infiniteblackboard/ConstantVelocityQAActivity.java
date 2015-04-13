@@ -14,7 +14,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 
-public class DisplacementQAActivity extends ActionBarActivity {
+public class ConstantVelocityQAActivity extends ActionBarActivity {
 
     TextToSpeech tts;
     ImageView imageView;
@@ -23,7 +23,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_displacement_qa);
+        setContentView(R.layout.activity_constantvelocity_qa);
 
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
@@ -34,7 +34,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
         final Button button2 = (Button) findViewById(R.id.Next_Button);
-        button2.setEnabled(false);
+        button2.setEnabled(true);
 
         final TextView numberCorrectText = (TextView) findViewById(R.id.correct_count_textview);
         ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
@@ -45,7 +45,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementQAActivity.this,
+                Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
                         MainActivity.class);
                 startActivity(myIntent);
             }
@@ -56,8 +56,8 @@ public class DisplacementQAActivity extends ActionBarActivity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementQAActivity.this,
-                        DisplacementActivity.class);
+                Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
+                        ConstantVelocityActivity.class);
                 startActivity(myIntent);
             }
         });
@@ -68,7 +68,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(DisplacementQAActivity.this,
+                Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
                         AccelerationActivity.class);
                 startActivity(myIntent);
             }
@@ -88,7 +88,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
                 {
                     result.setText("Correct!");
                     result.setTextColor(Color.GREEN);
-                    ScoreKeeper.addPoint(getApplicationContext(), DisplacementQAActivity.class.getSimpleName());
+                    ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                     button2.setEnabled(true);
 
@@ -97,7 +97,7 @@ public class DisplacementQAActivity extends ActionBarActivity {
                 {
                     result.setText("Incorrect! Try again!");
                     result.setTextColor(Color.RED);
-                    ScoreKeeper.subtractPoint(getApplicationContext(), DisplacementQAActivity.class.getSimpleName());
+                    ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
               
 
