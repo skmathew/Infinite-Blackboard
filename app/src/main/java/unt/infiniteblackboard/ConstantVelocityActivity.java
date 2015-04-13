@@ -83,7 +83,8 @@ public class ConstantVelocityActivity extends ActionBarActivity {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.disp_bb)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq
+                        )));
                         textView = (TextView) findViewById(R.id.textView1);
                         textView.setText(Html.fromHtml(getString(R.string.Vel)));
                         break;

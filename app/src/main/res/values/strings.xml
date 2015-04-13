@@ -59,6 +59,16 @@
     <string name="Vel_16">Anyway, we can think of this same velocity in terms of different distances...</string>
     <string name="Vel_17">...depending on time. In a second you travel 88 feet.</string>
 
+    <string name="VelQA">What do you think the distance in the formula looks like in the our picture?</string>
+    <string name="VelQAa1">Area</string>
+    <string name="VelQAa2">Volume</string>
+    <string name="VelQAa3">Speed</string>
+    <string name="VelQAa4">I don\'t know</string>
+
+
+
+
+
 
     <string name="hometext">
     Please click the Start button to begin.

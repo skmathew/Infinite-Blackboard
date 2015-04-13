@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.support.v7.app.ActionBarActivity;
+import android.text.Html;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
@@ -16,9 +16,11 @@ import android.widget.TextView;
 
 public class ConstantVelocityQAActivity extends ActionBarActivity {
 
-    TextToSpeech tts;
-    ImageView imageView;
+    ImageView imageView, imageViewtop;
+    TextView textView;
     private AnimationDrawable mAnim;
+    private int count = 0;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,16 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
+        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+        imageViewtop.setImageResource(R.drawable.chart);
+        textView = (TextView) findViewById(R.id.myImageViewText);
+        textView = (TextView) findViewById(R.id.myImageViewText);
+        textView.setText(Html.fromHtml(getString(R.string.Vel_eq
+        )));
+        textView = (TextView) findViewById(R.id.textView1);
+        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+
+
 
 
         final Button submitButton = (Button) findViewById(R.id.submit_button);
@@ -99,7 +111,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                     result.setTextColor(Color.RED);
                     ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
-              
+
 
                 }
             }
@@ -115,11 +127,6 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
             mAnim.stop();
         }
 
-        if(tts !=null)
-        {
-            tts.stop();
-            tts.shutdown();
-        }
         super.onPause();
 
     }

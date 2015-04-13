@@ -22,18 +22,44 @@
                 android:id="@+id/imageView"
                 />
 
+
+            <TextView
+                android:id="@+id/myImageViewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/imageView"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_margin="5dp"
+                android:gravity = "top|center"
+                android:text="@string/test_string"
+                android:textColor="#FEFEFA"
+                android:textStyle="italic"
+                />
+            <ImageView
+                android:id="@+id/imageViewtop"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:gravity = "top|left"
+                />
+
             <include layout="@layout/score_tracker_layout"/>
+
 
         </RelativeLayout>
 
         <TextView
-
+            android:id="@+id/textView1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="What is the displacement of the cross-country team if they begin at the school, run 10 miles and finish back at the school?"
+            android:text="@string/VelQA"
             android:textStyle="bold|italic" />
 
-       
+
 
         <RadioGroup
             android:layout_width="fill_parent"
@@ -47,25 +73,25 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A. 0 miles"
+                android:text="@string/VelQAa1"
                 android:id="@+id/radioButton" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="B. 10 miles north"
+                android:text="@string/VelQAa2"
                 android:id="@+id/radioButton2" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="C. 10 miles"
+                android:text="@string/VelQAa3"
                 android:id="@+id/radioButton3" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="D. 8"
+                android:text="@string/VelQAa4"
                 android:id="@+id/radioButton4" />
 
         </RadioGroup>
