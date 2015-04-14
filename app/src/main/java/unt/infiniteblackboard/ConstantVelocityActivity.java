@@ -35,7 +35,7 @@ public class ConstantVelocityActivity extends ActionBarActivity {
         mAnim = (AnimationDrawable) imageView.getBackground();
 
         textView = (TextView) findViewById(R.id.myImageViewText);
-        textView.setText(Html.fromHtml(getString(R.string.disp_bb)));
+        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
 
         TextView tv = (TextView) findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
