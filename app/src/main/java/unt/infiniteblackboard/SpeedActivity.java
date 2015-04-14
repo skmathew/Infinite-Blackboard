@@ -18,8 +18,6 @@ public class SpeedActivity extends ActionBarActivity {
         setContentView(R.layout.activity_speed);
 
 
-
-
         final Button homeButton = (Button) findViewById(R.id.Home_button);
         final Button previousButton = (Button) findViewById(R.id.Previous_Button);
         final Button nextButton = (Button) findViewById(R.id.Next_Button);

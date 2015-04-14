@@ -22,9 +22,23 @@ public class OneDMotionQAActivity extends ActionBarActivity {
         final Button submitButton = (Button) findViewById(R.id.submit_button);
         final Button nextButton = (Button) findViewById(R.id.Next_Button);
         final Button previousButton = (Button) findViewById(R.id.Previous_Button);
+        final Button homeButton = (Button) findViewById(R.id.Home_button);
 
         final TextView numberCorrectText = (TextView) findViewById(R.id.correct_count_textview);
         ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+
+        // Capture button clicks
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+
+
+                Intent myIntent = new Intent(OneDMotionQAActivity.this,
+                        MainActivity.class);
+                startActivity(myIntent);
+            }
+        });
 
         // Capture button clicks
         nextButton.setOnClickListener(new View.OnClickListener() {
