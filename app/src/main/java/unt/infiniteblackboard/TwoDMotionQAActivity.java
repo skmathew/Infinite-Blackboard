@@ -3,9 +3,11 @@
 package unt.infiniteblackboard;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -61,16 +63,19 @@ public class TwoDMotionQAActivity extends ActionBarActivity {
 
                 RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton3);
 
+                String equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
+                String explanation = ""; //Sets the explanation to explain why the correct answer is correct
+
                 if(correctAnswer.isChecked())
                 {
-                    result.setText("Correct!");
+                    result.setText(Html.fromHtml("Correct!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                     result.setTextColor(Color.GREEN);
                     ScoreKeeper.addPoint(getApplicationContext(), AccelerationQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                 }
                 else
                 {
-                    result.setText("Incorrect! Try again!");
+                    result.setText(Html.fromHtml("Incorrect! Try again!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                     result.setTextColor(Color.RED);
                     ScoreKeeper.subtractPoint(getApplicationContext(), AccelerationQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);

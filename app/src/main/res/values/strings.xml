@@ -85,6 +85,22 @@
     <![CDATA[ displacement vs distance ]]>
     </string>
 
+    <string name="twod_equation1">
+        <![CDATA[ v<sub><small>f</small></sub> = v<sub><small>i</small></sub> + at ]]>
+    </string>
+
+    <string name="twod_equation2">
+        <![CDATA[ v<sub><small>f</small></sub><sup><small>2</small></sup> = v<sub><small>i</small></sub><sup><small>2</small></sup> + 2a&Delta;x ]]>
+    </string>
+
+    <string name="twod_equation3">
+        <![CDATA[ &Delta;x = v<sub><small>i</small></sub>t + &frac12;at<sup><small>2</small></sup> ]]>
+    </string>
+
+    <string name="twod_equation4">
+        <![CDATA[ &Delta;x = &frac12;(v<sub><small>i</small></sub> + v<sub><small>f</small></sub>)t ]]>
+    </string>
+
 
 
 

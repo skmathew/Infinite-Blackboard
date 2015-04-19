@@ -99,6 +99,8 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:layout_below="@+id/rdoGroup"
+            android:layout_above="@+id/submit_button"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
             android:id="@+id/textView2"
@@ -110,6 +112,7 @@
 
 
     </LinearLayout>
+
 
 
     <Button
