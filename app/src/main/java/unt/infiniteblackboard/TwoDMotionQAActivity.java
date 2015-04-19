@@ -63,21 +63,32 @@ public class TwoDMotionQAActivity extends ActionBarActivity {
 
                 RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton3);
 
+<<<<<<< HEAD
                 String equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
                 String explanation = ""; //Sets the explanation to explain why the correct answer is correct
 
                 if(correctAnswer.isChecked())
                 {
                     result.setText(Html.fromHtml("Correct!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
+=======
+                Button disableSubmit = (Button) findViewById(R.id.submit_button);
+
+                disableSubmit.setEnabled(false);
+
+                if(correctAnswer.isChecked())
+                {
+                    result.setText("Correct!");
+
+>>>>>>> 0b4547948fed23e964070a8aef61aa4117d0a649
                     result.setTextColor(Color.GREEN);
-                    ScoreKeeper.addPoint(getApplicationContext(), AccelerationQAActivity.class.getSimpleName());
+                    ScoreKeeper.addPoint(getApplicationContext(), TwoDMotionQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                 }
                 else
                 {
                     result.setText(Html.fromHtml("Incorrect! Try again!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                     result.setTextColor(Color.RED);
-                    ScoreKeeper.subtractPoint(getApplicationContext(), AccelerationQAActivity.class.getSimpleName());
+                    ScoreKeeper.subtractPoint(getApplicationContext(), TwoDMotionQAActivity.class.getSimpleName());
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                 }
             }

@@ -102,7 +102,16 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                 {
                     result.setText(Html.fromHtml("Correct!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                     result.setTextColor(Color.GREEN);
+<<<<<<< HEAD:app/src/main/java/unt/infiniteblackboard/ConstantVelocityQAActivity.java
                     ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
+=======
+
+                    Button disableSubmit = (Button) findViewById(R.id.submit_button);
+
+                    disableSubmit.setEnabled(false);
+
+                    ScoreKeeper.addPoint(getApplicationContext(), DisplacementQAActivity.class.getSimpleName());
+>>>>>>> 0b4547948fed23e964070a8aef61aa4117d0a649:app/src/main/java/unt/infiniteblackboard/DisplacementQAActivity.java
                     ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                     button2.setEnabled(true);
 
