@@ -40,7 +40,7 @@
 
 
 
-    <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
+    <string name="Acc"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
     <string name="Vel5_eq"><![CDATA[ Distance= Velocity * time ]]></string>
     <string name="Vel">Welcome! I would like to help you better understand Constant Velocity.</string>
     <string name="Vel_1">Lets start with the definition of velocity.</string>
@@ -66,6 +66,31 @@
     <string name="VelQAa2">Volume</string>
     <string name="VelQAa3">Speed</string>
     <string name="VelQAa4">I don\'t know</string>
+
+
+    // Acceleration String
+
+    <string name="Acc_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
+    <string name="Acc_eq1"><![CDATA[ Distance= Velocity * time ]]></string>
+    <string name="Acc_0">Welcome! I would like to help you better understand Constant Velocity.</string>
+    <string name="Acc_1">Lets start with the definition of velocity.</string>
+    <string name="Acc_2">We say that velocity is defined as distance over time.</string>
+    <string name="Acc_3">Of course we mean the distance traveled over the time it takes to get there. So it\'s a change of time.</string>
+    <string name="Acc_4">We will see why it\'s important to think in terms of "the change of" in the definition when we talk about acceleration.</string>
+    <string name="Acc_5">Now, this certainly one way of defining velocity, but there is another way of saying the same thing.</string>
+    <string name="Acc_6">We could also say that the distance traveled is proportional to the time of travel, and velocity is the proportionality constant.</string>
+    <string name="Acc_7">Thinking of distance as the product of velocity and time allows us to visualize this idea with a picture we can draw on the blackbord.</string>
+    <string name="Acc_8">Let\'s start with trying to think about velocity in a different direction.</string>
+    <string name="Acc_9">Let\'s think of velocity as going upward. It\'s like the faster you go, the higher we are on the vertical axis.</string>
+    <string name="Acc_10">And then we think of time as going ogg to the right.</string>
+    <string name="Acc_11">Let\'s start with trying to think about velocity in a different direction.</string>
+    <string name="Acc_12">We can visualize all three things in just one picture drawn in two dimensions. Just as length as length times height is area in real space, velocity times time is distance in this particular way of looking at it.</string>
+    <string name="Acc_13">Let\'s look at an example. Suppose you are going 60 miles an hour. Of course that means you will go 60 miles in 60 minutes.</string>
+    <string name="Acc_14">... or one mile for each minute. Most people know that 60 miles per hour is also one mile per minute.</string>
+    <string name="Acc_15">But did you know that 60 miles per hour is also 88 feet per second?</string>
+    <string name="Acc_16">Anyway, we can think of this same velocity in terms of different distances...</string>
+    <string name="Acc_17">...depending on time. In a second you travel 88 feet.</string>
+
 
 
 

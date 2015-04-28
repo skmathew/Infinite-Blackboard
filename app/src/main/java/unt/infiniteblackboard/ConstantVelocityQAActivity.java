@@ -34,7 +34,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         imageViewtop.setImageResource(R.drawable.chart);
         textView = (TextView) findViewById(R.id.myImageViewText);
         textView = (TextView) findViewById(R.id.myImageViewText);
-        textView.setText(Html.fromHtml(getString(R.string.Vel_eq
+        textView.setText(Html.fromHtml(getString(R.string.Acc
         )));
         textView = (TextView) findViewById(R.id.textView1);
         textView.setText(Html.fromHtml(getString(R.string.VelQA)));

@@ -50,12 +50,22 @@ public class MainActivity extends ActionBarActivity {
                 switch(position)
                 {
                     case 0:
-                        Intent intent = new Intent(MainActivity.this, ConstantVelocityActivity.class);
-                        startActivity(intent);
-                        break;
+                    Intent intent = new Intent(MainActivity.this, ConstantVelocityActivity.class);
+                    startActivity(intent);
+                    break;
 
                     case 1:
                         intent = new Intent(MainActivity.this, ConstantVelocityQAActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 6:
+                         intent = new Intent(MainActivity.this, AccelerationActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 7:
+                        intent = new Intent(MainActivity.this, AccelerationQAActivity.class);
                         startActivity(intent);
                         break;
 
