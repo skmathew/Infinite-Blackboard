@@ -16,6 +16,7 @@
     <string name="TwoD_text">2-D Motion</string>
     <string name="Formulas_text">Formulas</string>
     <string name="Review_text">Review</string>
+    <string name="Velocity_video">Velocity Video</string>
 
     <string-array name="sections">
     <item>Constant Velocity</item>
@@ -26,14 +27,10 @@
     <item>Speed Q/A</item>
     <item>Acceleration</item>
     <item>Acceleration Q/A</item>
-    <item>Velocity</item>
     <item>1-D Motion</item>
+    <item>1-D Motion Q/A</item>
     <item>2-D Motion</item>
-    <item>Speed</item>
-    <item>Velocity</item>
-    <item>Acceleration</item>
-    <item>1-D Motion</item>
-    <item>2-D Motion</item>
+    <item>2-D Motion Q/A</item>
     </string-array>
 
 
@@ -180,6 +177,7 @@
     <string name="title_activity_speed">Infinite Blackboard</string>
     <string name="title_activity_speed_qa">Infinite Blackboard</string>
     <string name="title_activity_velocity">VelocityActivity</string>
+    <string name="title_activity_velocity_video">VelocityVideo</string>
     <string name="title_activity_velocity_qa">VelocityQAActivity</string>
     <string name="title_activity_one_dmotion">OneDMotionActivity</string>
     <string name="title_activity_one_dmotion_qa">OneDMotionQAActivity</string>

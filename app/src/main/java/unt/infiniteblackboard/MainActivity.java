@@ -59,8 +59,33 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
+<<<<<<< HEAD
                     case 6:
                          intent = new Intent(MainActivity.this, AccelerationActivity.class);
+=======
+/*                    case 2:
+                        intent = new Intent(MainActivity.this, AverageVelocityActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 3:
+                        intent = new Intent(MainActivity.this, AverageVelocityQAActivity.class);
+                        startActivity(intent);
+                        break;
+*/
+                    case 4:
+                        intent = new Intent(MainActivity.this, SpeedActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 5:
+                        intent = new Intent(MainActivity.this, SpeedQAActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 6:
+                        intent = new Intent(MainActivity.this, AccelerationActivity.class);
+>>>>>>> c893bd775030faf9fc84ded0102a29439ba0895d
                         startActivity(intent);
                         break;
 
@@ -69,6 +94,28 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
+<<<<<<< HEAD
+=======
+                    case 8:
+                        intent = new Intent(MainActivity.this, OneDMotionActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 9:
+                        intent = new Intent(MainActivity.this, OneDMotionQAActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 10:
+                        intent = new Intent(MainActivity.this, TwoDMotionActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 11:
+                        intent = new Intent(MainActivity.this, TwoDMotionQAActivity.class);
+                        startActivity(intent);
+                        break;
+>>>>>>> c893bd775030faf9fc84ded0102a29439ba0895d
                 }
 
             }
@@ -106,7 +153,7 @@ public class MainActivity extends ActionBarActivity {
 
         Toast.makeText(getApplicationContext(), item.getTitle() + " selected", Toast.LENGTH_SHORT).show();
 
-        switch (item.getItemId()) {
+/*        switch (item.getItemId()) {
             case R.id.displacement_menu:
                 Intent myIntent = new Intent(MainActivity.this,
                         ConstantVelocityActivity.class);
@@ -155,8 +202,9 @@ public class MainActivity extends ActionBarActivity {
                 break;
 
 
-        }
-        return true;
+*/       //}
+        //return true;
 
+    return true;
     }
 }

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="unt.infiniteblackboard" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -78,6 +80,10 @@
         <activity
             android:name=".VelocityActivity"
             android:label="@string/title_activity_velocity" >
+        </activity>
+        <activity
+            android:name=".VelocityVideo"
+            android:label="@string/title_activity_velocity_video" >
         </activity>
         <activity
             android:name=".VelocityQAActivity"
