@@ -14,7 +14,7 @@ public class ScoreKeeper {
 
     private static String[] mAllQuestions = new String[] {
             AccelerationQAActivity.class.getSimpleName(),
-            ConstantVelocityQAActivity.class.getSimpleName(),
+            //ConstantVelocityQAActivity.class.getSimpleName(),
             OneDMotionQAActivity.class.getSimpleName(),
             SpeedQAActivity.class.getSimpleName(),
             TwoDMotionQAActivity.class.getSimpleName(),
