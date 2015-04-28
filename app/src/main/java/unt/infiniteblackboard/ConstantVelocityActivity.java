@@ -40,6 +40,7 @@ public class ConstantVelocityActivity extends ActionBarActivity {
         TextView tv = (TextView) findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
 
+        final Button button3 = (Button) findViewById(R.id.Velocity_video);
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
         final Button button2 = (Button) findViewById(R.id.Next_Button);
@@ -51,6 +52,18 @@ public class ConstantVelocityActivity extends ActionBarActivity {
         textView.setTypeface(custom_font);
         */
 
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(ConstantVelocityActivity.this,
+                        VelocityVideo.class);
+                startActivity(myIntent);
+
+
+            }
+        });
 
         // Capture button clicks home
         button.setOnClickListener(new View.OnClickListener() {
