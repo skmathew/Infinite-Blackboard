@@ -20,6 +20,9 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
     TextView textView;
     private AnimationDrawable mAnim;
     private int count = 0;
+    private int answer[] = new int[] {0,0,0};
+    private int total = 3;
+
 
 
     @Override
@@ -33,11 +36,14 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
         imageViewtop.setImageResource(R.drawable.chart);
         textView = (TextView) findViewById(R.id.myImageViewText);
-        textView = (TextView) findViewById(R.id.myImageViewText);
-        textView.setText(Html.fromHtml(getString(R.string.Acc
+        textView.setText(Html.fromHtml(getString(R.string.Vel_eq
         )));
         textView = (TextView) findViewById(R.id.textView1);
         textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+
+        textView = (TextView) findViewById(R.id.Score);
+        textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+
 
 
 
@@ -48,8 +54,8 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         final Button button2 = (Button) findViewById(R.id.Next_Button);
         button2.setEnabled(true);
 
-        final TextView numberCorrectText = (TextView) findViewById(R.id.correct_count_textview);
-        ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+        //final TextView numberCorrectText = (TextView) findViewById(R.id.correct_count_textview);
+        //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
 
 
         // Capture button clicks
@@ -67,10 +73,70 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                // Start NewActivity.class
-                Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
-                        ConstantVelocityActivity.class);
-                startActivity(myIntent);
+                switch (count){
+                    case 0:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        //imageViewtop.setImageResource(0);
+                        imageViewtop.setImageResource(R.drawable.chart);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+                        break;
+
+                    case 1:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        //imageViewtop.setImageResource(0);
+                        imageViewtop.setImageResource(R.drawable.chart);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+                        break;
+
+                    case 2:
+                        count--;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation);
+                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        //imageViewtop.setImageResource(0);
+                        imageViewtop.setImageResource(R.drawable.chart);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+                        break;
+
+
+
+
+                    default:
+                        // Start
+                        Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
+                                MainActivity.class);
+                        startActivity(myIntent);
+                }
             }
         });
 
@@ -79,10 +145,70 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                // Start NewActivity.class
-                Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
-                        AccelerationActivity.class);
-                startActivity(myIntent);
+                switch (count){
+                    case 0:
+                        count++;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        //imageViewtop.setImageResource(0);
+                        imageViewtop.setImageResource(R.drawable.chart);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+                        break;
+
+                    case 1:
+                        count++;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        //imageViewtop.setImageResource(0);
+                        imageViewtop.setImageResource(R.drawable.chart);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+                        break;
+
+                    case 2:
+                        count++;
+                        if (mAnim.isRunning()){
+                            mAnim.stop();
+                        }
+                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView.setBackgroundResource(R.drawable.view_animation1);
+                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        //imageViewtop.setImageResource(0);
+                        imageViewtop.setImageResource(R.drawable.chart);
+                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim.start();
+                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView = (TextView) findViewById(R.id.textView1);
+                        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+                        break;
+
+
+
+
+                    default:
+                        // Start
+                        Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
+                                MainActivity.class);
+                        startActivity(myIntent);
+                }
             }
         });
 
@@ -90,30 +216,117 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         // Capture radio button clicks
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-                TextView result = (TextView) findViewById(R.id.textView2);
 
-                result.setVisibility(View.VISIBLE);
+                switch (count){
+                    case 0:
+                        TextView result = (TextView) findViewById(R.id.textView2);
+                        result.setVisibility(View.VISIBLE);
+                        RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton);
+                        if(correctAnswer.isChecked())
+                        {
+                            result.setText("Correct!");
+                            result.setTextColor(Color.GREEN);
+                            //ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
+                            //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+                            button2.setEnabled(true);
+                            if (answer[0]==0)
+                            {
+                                answer[0] = 1;
+                            }
+                            textView = (TextView) findViewById(R.id.Score);
+                            textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+                        }
+                        else
+                        {
+                            result.setText("Incorrect! Try again!");
+                            result.setTextColor(Color.RED);
+                            //ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
+                            //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+                            if (answer[0]==1)
+                            {
+                                answer[0] = 0;
+                            }
+                            textView = (TextView) findViewById(R.id.Score);
+                            textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+                        }
+                        break;
 
-                RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton);
+                    case 1:
+                        result = (TextView) findViewById(R.id.textView2);
+                        result.setVisibility(View.VISIBLE);
+                        correctAnswer = (RadioButton) findViewById(R.id.radioButton);
+                        if(correctAnswer.isChecked())
+                        {
+                            result.setText("Correct!");
+                            result.setTextColor(Color.GREEN);
+                            //ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
+                            //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+                            button2.setEnabled(true);
+                            if (answer[1]==0)
+                            {
+                                answer[1] = 1;
+                            }
+                            textView = (TextView) findViewById(R.id.Score);
+                            textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+                        }
+                        else
+                        {
+                            result.setText("Incorrect! Try again!");
+                            result.setTextColor(Color.RED);
+                            //ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
+                            //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+                            if (answer[1]==1)
+                            {
+                                answer[1] = 0;
+                            }
+                            textView = (TextView) findViewById(R.id.Score);
+                            textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+                        }
+                        break;
 
-                if(correctAnswer.isChecked())
-                {
-                    result.setText("Correct!");
-                    result.setTextColor(Color.GREEN);
-                    ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
-                    ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
-                    button2.setEnabled(true);
 
+                    case 2:
+                        result = (TextView) findViewById(R.id.textView2);
+                        result.setVisibility(View.VISIBLE);
+                        correctAnswer = (RadioButton) findViewById(R.id.radioButton);
+                        if(correctAnswer.isChecked())
+                        {
+                            result.setText("Correct!");
+                            result.setTextColor(Color.GREEN);
+                            //ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
+                            //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+                            button2.setEnabled(true);
+                            if (answer[2]==0)
+                            {
+                                answer[2] = 1;
+                            }
+                            textView = (TextView) findViewById(R.id.Score);
+                            textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+                        }
+                        else
+                        {
+                            result.setText("Incorrect! Try again!");
+                            result.setTextColor(Color.RED);
+                            //ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
+                            //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
+                            if (answer[2]==1)
+                            {
+                                answer[2] = 0;
+                            }
+                            textView = (TextView) findViewById(R.id.Score);
+                            textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+                        }
+                        break;
+
+
+
+
+
+                    default:
+                        // Start
+                        break;
                 }
-                else
-                {
-                    result.setText("Incorrect! Try again!");
-                    result.setTextColor(Color.RED);
-                    ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
-                    ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
 
-
-                }
             }
         });
 

@@ -41,8 +41,9 @@
 
 
 
-    <string name="Acc"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
+    <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
     <string name="Vel5_eq"><![CDATA[ Distance= Velocity * time ]]></string>
+    <string name="Acc"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
     <string name="Vel">Welcome! I would like to help you better understand Constant Velocity.</string>
     <string name="Vel_1">Lets start with the definition of velocity.</string>
     <string name="Vel_2">We say that velocity is defined as distance over time.</string>
