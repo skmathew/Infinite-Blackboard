@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+    <string name="you_tube_API"> AIzaSyA_PzQFAzM26Sz7LPg-Bowl2_JvxnPqxoc </string>
+    
     <string name="app_name">Infinite Blackboard</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
