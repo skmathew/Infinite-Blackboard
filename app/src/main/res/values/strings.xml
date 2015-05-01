@@ -23,6 +23,7 @@
 
     <string-array name="sections">
     <item>Constant Velocity</item>
+    <item>Constant Velocity Youtube Video</item>
     <item>Constant Velocity Q/A</item>
     <item>Average Velocity</item>
     <item>Average Velocity Q/A</item>

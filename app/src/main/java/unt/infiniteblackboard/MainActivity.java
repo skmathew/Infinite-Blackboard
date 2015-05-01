@@ -55,6 +55,12 @@ public class MainActivity extends ActionBarActivity {
                     break;
 
                     case 1:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "d-_eqgj5-K8");
+                        startActivity(intent);
+                        break;
+
+                    case 2:
                         intent = new Intent(MainActivity.this, ConstantVelocityQAActivity.class);
                         startActivity(intent);
                         break;

@@ -6,6 +6,8 @@ package unt.infiniteblackboard;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -14,7 +16,7 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayer.Provider;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class VelocityVideo extends YouTubeBaseActivity implements
+public class VideoActivity extends YouTubeBaseActivity implements
         YouTubePlayer.OnInitializedListener {
 
     private static final int RECOVERY_DIALOG_REQUEST = 10;
@@ -22,16 +24,32 @@ public class VelocityVideo extends YouTubeBaseActivity implements
 
     //From URL -> https://www.youtube.com/watch?v=kHue-HaXXzg
     // Let It Go : "Frozen"
-    private String VIDEO_ID = "K7BOH-Ll8_g";
 
+    private String VIDEO_ID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.velocity_video);
+        setContentView(R.layout.activity_video);
+        Bundle b = getIntent().getExtras();
+        VIDEO_ID = b.getString("id");
 
         YouTubePlayerView youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(API_KEY, this);
+        final Button button = (Button) findViewById(R.id.Home_button);
+
+        // Capture button clicks home
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(VideoActivity.this,
+                        MainActivity.class);
+                startActivity(myIntent);
+
+
+            }
+        });
     }
 
     @Override
