@@ -64,11 +64,19 @@
         </activity>
         <activity
             android:name=".AccelerationActivity"
-            android:label="@string/title_activity_acceleration" >
+            android:label="@string/title_activity_acceleration"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="unt.infiniteblackboard.MainActivity" />
         </activity>
         <activity
             android:name=".AccelerationQAActivity"
-            android:label="@string/title_activity_acceleration_qa" >
+            android:label="@string/title_activity_acceleration_qa"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="unt.infiniteblackboard.MainActivity" />
         </activity>
         <activity
             android:name=".SpeedActivity"

@@ -65,12 +65,12 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
-                    case 6:
+                    case 7:
                          intent = new Intent(MainActivity.this, AccelerationActivity.class);
                         startActivity(intent);
                         break;
 
-                    case 7:
+                    case 8:
                         intent = new Intent(MainActivity.this, AccelerationQAActivity.class);
                         startActivity(intent);
                         break;
