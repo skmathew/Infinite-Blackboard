@@ -14,13 +14,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class ConstantVelocityActivity extends ActionBarActivity {
+public class ConstantVelocityActivity extends ActionBarActivity  {
 
     ImageView imageView, imageViewtop;
     TextView textView;
     private AnimationDrawable mAnim;
     private int count = 0;
 
+
+
+
+    //K7BOH-Ll8_g
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -744,6 +748,8 @@ public class ConstantVelocityActivity extends ActionBarActivity {
         inflater.inflate(R.menu.activity_constantvelocity, menu);
         return super.onCreateOptionsMenu(menu);
     }
+
+
 
 
 
