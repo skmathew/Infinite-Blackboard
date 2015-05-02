@@ -92,7 +92,8 @@
         </activity>
         <activity
             android:name=".VideoActivity"
-            android:label="@string/title_activity_velocity_video" >
+            android:label="@string/title_activity_velocity_video"
+            android:screenOrientation="portrait">
         </activity>
         <activity
             android:name=".VelocityQAActivity"

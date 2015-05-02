@@ -202,7 +202,6 @@ class VAdapter extends ArrayAdapter<String>
 
         myImage.setImageResource(images[position%3]);
         myText.setText(titleArray[position]);
-
         return row;
     }
 }

@@ -68,10 +68,18 @@
     <string name="Vel_17">...depending on time. In a second you travel 88 feet.</string>
 
     <string name="VelQA">What do you think the distance in the formula looks like in the our picture?</string>
+    <string name="VelQA1">In less time you travel less distance. How far do you think you travel in 3/4 of a second?</string>
+
     <string name="VelQAa1">Area</string>
     <string name="VelQAa2">Volume</string>
     <string name="VelQAa3">Speed</string>
     <string name="VelQAa4">I don\'t know</string>
+
+    <string name="VelQA1a1">88 ft</string>
+    <string name="VelQA1a2">66 ft</string>
+    <string name="VelQA1a3">44 ft</string>
+    <string name="VelQA1a4">I don\'t know</string>
+
 
 
     // Acceleration String
