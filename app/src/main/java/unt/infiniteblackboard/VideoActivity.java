@@ -1,9 +1,5 @@
 package unt.infiniteblackboard;
 
-/**
- * Created by RAFI on 4/27/2015.
- */
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
