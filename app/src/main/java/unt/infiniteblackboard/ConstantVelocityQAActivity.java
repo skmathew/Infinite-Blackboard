@@ -170,8 +170,8 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         result.setVisibility(View.VISIBLE);
                         RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton);
 
-			String equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
-                	String explanation = ""; //Sets the explanation to explain why the correct answer is correct
+                        String equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
+                        String explanation = ""; //Sets the explanation to explain why the correct answer is correct
 
                         if(correctAnswer.isChecked())
                         {
@@ -207,8 +207,8 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         result.setVisibility(View.VISIBLE);
                         correctAnswer = (RadioButton) findViewById(R.id.radioButton2);
 
-                	String equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
-                	String explanation = ""; //Sets the explanation to explain why the correct answer is correct
+                	    equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
+                	    explanation = ""; //Sets the explanation to explain why the correct answer is correct
 
                         if(correctAnswer.isChecked())
                         {
