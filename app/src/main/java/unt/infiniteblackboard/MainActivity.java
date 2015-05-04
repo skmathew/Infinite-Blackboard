@@ -76,16 +76,35 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
-                    case 3:
-                        intent = new Intent(MainActivity.this, AverageVelocityActivity)
+/*                    case 3:
+                        intent = new Intent(MainActivity.this, AverageVelocityActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 4:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "oRKxmXwLvUU");
+                        startActivity(intent);
+                        break;
+
+                    case 5:
+                        intent = new Intent(MainActivity.this, AverageVelocityQAActivity.class);
+                        startActivity(intent);
+                        break;
+*/
+                    case 6:
+                        intent = new Intent(MainActivity.this, SpeedActivity.class);
+                        startActivity(intent);
+                        break;
 
                     case 7:
-                         intent = new Intent(MainActivity.this, AccelerationActivity.class);
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "zAx61CO5mDw");
                         startActivity(intent);
                         break;
 
                     case 8:
-                        intent = new Intent(MainActivity.this, AccelerationQAActivity.class);
+                        intent = new Intent(MainActivity.this, SpeedQAActivity.class);
                         startActivity(intent);
                         break;
 
