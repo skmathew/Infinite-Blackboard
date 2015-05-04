@@ -76,6 +76,7 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
+<<<<<<< HEAD
 /*                    case 3:
                         intent = new Intent(MainActivity.this, AverageVelocityActivity.class);
                         startActivity(intent);
@@ -96,6 +97,10 @@ public class MainActivity extends ActionBarActivity {
                         intent = new Intent(MainActivity.this, SpeedActivity.class);
                         startActivity(intent);
                         break;
+=======
+                    case 3:
+                        intent = new Intent(MainActivity.this, AverageVelocityActivity)
+>>>>>>> 9d035ba2e5509fb243118775359a3b2b125a5ef7
 
                     case 7:
                         intent = new Intent(MainActivity.this, VideoActivity.class);

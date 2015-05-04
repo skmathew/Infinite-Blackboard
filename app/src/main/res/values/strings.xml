@@ -39,8 +39,20 @@
     <item>1-D Motion Youtube Video</item>
     <item>1-D Motion Q/A</item>
     <item>2-D Motion</item>
+<<<<<<< HEAD
     <item>2-D Motion Youtube Video</item>
     <item>2-D Motion Q/A</item>
+=======
+    <item>Speed</item>
+    <item>Velocity</item>
+    <item>Acceleration</item>
+    <item>1-D Motion</item>
+    <item>1-D Motion Youtube Video</item>
+    <item>1-D Motion Q/A</item>
+    <item>2-D Motion</item>
+    <item>2-D Motion Youtube Video</item>
+    <itme>2-D Motion Q/A</itme>
+>>>>>>> 9d035ba2e5509fb243118775359a3b2b125a5ef7
     </string-array>
 
 
