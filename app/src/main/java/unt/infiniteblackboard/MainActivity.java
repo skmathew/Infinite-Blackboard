@@ -108,6 +108,22 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
+                    case 9:
+                        intent = new Intent(MainActivity.this, AccelerationActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 10:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "FOkQszg1-j8");
+                        startActivity(intent);
+                        break;
+
+                    case 11:
+                        intent = new Intent(MainActivity.this, AccelerationQAActivity.class);
+                        startActivity(intent);
+                        break;
+
                 }
 
             }
