@@ -76,6 +76,9 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
+                    case 3:
+                        intent = new Intent(MainActivity.this, AverageVelocityActivity)
+
                     case 7:
                          intent = new Intent(MainActivity.this, AccelerationActivity.class);
                         startActivity(intent);
