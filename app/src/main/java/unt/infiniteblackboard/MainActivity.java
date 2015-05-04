@@ -1,19 +1,20 @@
 package unt.infiniteblackboard;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -23,6 +24,7 @@ public class MainActivity extends ActionBarActivity {
     public static final String PREF_QUESTIONS_CORRECT = "pref_questions_correct";
     private ListView mainListView ;
     private ArrayAdapter<String> listAdapter ;
+    int[] images = {R.drawable.blackbaord,R.drawable.youtube,R.drawable.test};
 
 
 
@@ -31,6 +33,8 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // Find the ListView resource.
+
+        /*
         mainListView = (ListView) findViewById( R.id.mainListView );
         String[] sections = getResources().getStringArray(R.array.sections);
         ArrayList<String> sectionList = new ArrayList<String>();
@@ -39,6 +43,13 @@ public class MainActivity extends ActionBarActivity {
         listAdapter = new ArrayAdapter<String>(this, R.layout.simplerow, sectionList);
         mainListView.setAdapter( listAdapter );
 
+*/
+        String[] sections = getResources().getStringArray(R.array.sections);
+
+        mainListView = (ListView) findViewById( R.id.mainListView );
+        VAdapter adapter = new VAdapter(this,sections,images);
+        //ArrayAdapter<String> adapter1  = new ArrayAdapter<String>(this, R.layout.single_row, R.id.textView, sections);
+        mainListView.setAdapter(adapter);
 
 
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
@@ -50,12 +61,50 @@ public class MainActivity extends ActionBarActivity {
                 switch(position)
                 {
                     case 0:
-                        Intent intent = new Intent(MainActivity.this, ConstantVelocityActivity.class);
+                    Intent intent = new Intent(MainActivity.this, ConstantVelocityActivity.class);
+                    startActivity(intent);
+                    break;
+
+                    case 1:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "d-_eqgj5-K8");
                         startActivity(intent);
                         break;
 
-                    case 1:
+                    case 2:
                         intent = new Intent(MainActivity.this, ConstantVelocityQAActivity.class);
+                        startActivity(intent);
+                        break;
+
+/*                    case 3:
+                        intent = new Intent(MainActivity.this, AverageVelocityActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 4:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "oRKxmXwLvUU");
+                        startActivity(intent);
+                        break;
+
+                    case 5:
+                        intent = new Intent(MainActivity.this, AverageVelocityQAActivity.class);
+                        startActivity(intent);
+                        break;
+*/
+                    case 6:
+                        intent = new Intent(MainActivity.this, SpeedActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 7:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "zAx61CO5mDw");
+                        startActivity(intent);
+                        break;
+
+                    case 8:
+                        intent = new Intent(MainActivity.this, SpeedQAActivity.class);
                         startActivity(intent);
                         break;
 
@@ -148,5 +197,33 @@ public class MainActivity extends ActionBarActivity {
         }
         return true;
 
+    }
+}
+
+
+class VAdapter extends ArrayAdapter<String>
+{
+    Context context;
+    int[] images;
+    String[] titleArray;
+    VAdapter(Context c, String[] titles, int imgs[])
+    {
+        super(c,R.layout.single_row,R.id.textView,titles);
+        this.context=c;
+        this.images=imgs;
+        this.titleArray = titles;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent)
+    {
+        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View row = inflater.inflate(R.layout.single_row,parent,false);
+        ImageView myImage = (ImageView) row.findViewById(R.id.imageView);
+        TextView myText = (TextView) row.findViewById(R.id.textView);
+
+        myImage.setImageResource(images[position%3]);
+        myText.setText(titleArray[position]);
+        return row;
     }
 }

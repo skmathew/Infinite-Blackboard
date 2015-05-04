@@ -38,6 +38,27 @@
                 android:textColor="#FEFEFA"
                 android:textStyle="italic"
                 />
+
+
+            <TextView
+                android:id="@+id/Score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/imageView"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_margin="5dp"
+                android:gravity = "top|left"
+                android:text="@string/test_string"
+                android:textColor="#FEFEFA"
+                android:textStyle="italic"
+                />
+
+
+
+
             <ImageView
                 android:id="@+id/imageViewtop"
                 android:layout_width="70dp"
@@ -46,9 +67,6 @@
                 android:layout_alignRight="@+id/imageView"
                 android:gravity = "top|left"
                 />
-
-            <include layout="@layout/score_tracker_layout"/>
-
 
         </RelativeLayout>
 
@@ -68,7 +86,7 @@
             android:minHeight="200dp"
             android:minWidth="200dp"
             android:focusableInTouchMode="false"
-            android:nestedScrollingEnabled="false">
+            android:nestedScrollingEnabled="true">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -104,6 +122,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
             android:id="@+id/textView2"
+            android:gravity = "top|right"
+
             android:enabled="false"
             android:visibility="invisible"
             android:textStyle="bold" />
