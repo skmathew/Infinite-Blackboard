@@ -107,6 +107,7 @@ public class MainActivity extends ActionBarActivity {
                     case 7:
                         intent = new Intent(MainActivity.this, VideoActivity.class);
                         intent.putExtra("id", "zAx61CO5mDw");
+                        intent.putExtra("topic", "Speed");
                         startActivity(intent);
                         break;
 
@@ -123,6 +124,7 @@ public class MainActivity extends ActionBarActivity {
                     case 10:
                         intent = new Intent(MainActivity.this, VideoActivity.class);
                         intent.putExtra("id", "FOkQszg1-j8");
+                        intent.putExtra("topic", "Acceleration");
                         startActivity(intent);
                         break;
 
@@ -139,6 +141,7 @@ public class MainActivity extends ActionBarActivity {
                     case 13:
                         intent = new Intent(MainActivity.this, VideoActivity.class);
                         intent.putExtra("id", "8wZugqi_uCg");
+                        intent.putExtra("topic", "1-D Motion");
                         startActivity(intent);
                         break;
 
