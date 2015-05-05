@@ -333,7 +333,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_14)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_14)));
                         break;
 
                     case 16:
@@ -403,7 +403,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_1)));
                         break;
 
                     case 1:
@@ -420,7 +420,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(getString(R.string.Vel_2));
+                        textView.setText(getString(R.string.Acc_2));
                         break;
 
                     case 2:
@@ -437,7 +437,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_3)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_3)));
                         break;
 
 
@@ -455,7 +455,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_4)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_4)));
                         break;
 
 
@@ -473,7 +473,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_5)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_5)));
                         break;
 
                     case 5:
@@ -490,7 +490,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_6)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_6)));
                         break;
 
 
@@ -509,7 +509,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_7)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_7)));
                         break;
 
 
@@ -527,7 +527,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_8)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_8)));
                         break;
 
                     case 8:
@@ -544,7 +544,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_9)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_9)));
                         break;
 
                     case 9:
@@ -561,7 +561,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_10)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_10)));
                         break;
 
                     case 10:
@@ -578,7 +578,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_11)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_11)));
                         break;
 
                     case 11:
@@ -595,7 +595,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_12)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_12)));
                         break;
 
                     case 12:
@@ -612,7 +612,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_13)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_13)));
                         break;
 
                     case 13:
@@ -629,7 +629,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_14)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_14)));
                         break;
 
                     case 14:
@@ -646,7 +646,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_15)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_15)));
                         break;
 
 
@@ -664,7 +664,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_16)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_16)));
                         break;
 
                     case 16:
@@ -681,7 +681,7 @@ public class AccelerationActivity extends ActionBarActivity {
                         textView = (TextView) findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_17)));
+                        textView.setText(Html.fromHtml(getString(R.string.Acc_17)));
                         break;
 
 

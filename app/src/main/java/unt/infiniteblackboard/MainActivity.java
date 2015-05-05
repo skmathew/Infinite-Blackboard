@@ -2,6 +2,7 @@ package unt.infiniteblackboard;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
@@ -25,8 +26,8 @@ public class MainActivity extends ActionBarActivity {
     private ListView mainListView ;
     private ArrayAdapter<String> listAdapter ;
     int[] images = {R.drawable.blackbaord,R.drawable.youtube,R.drawable.test};
-
-
+    private AnimationDrawable mAnim;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,11 @@ public class MainActivity extends ActionBarActivity {
         mainListView.setAdapter( listAdapter );
 
 */
+
+        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setBackgroundResource(R.drawable.view_animation2);
+        mAnim = (AnimationDrawable) imageView.getBackground();
+
         String[] sections = getResources().getStringArray(R.array.sections);
 
         mainListView = (ListView) findViewById( R.id.mainListView );
@@ -68,6 +74,7 @@ public class MainActivity extends ActionBarActivity {
                     case 1:
                         intent = new Intent(MainActivity.this, VideoActivity.class);
                         intent.putExtra("id", "d-_eqgj5-K8");
+                        intent.putExtra("topic", "Constant Velocity");
                         startActivity(intent);
                         break;
 
@@ -134,6 +141,24 @@ public class MainActivity extends ActionBarActivity {
         ScoreKeeper.clearScore(this);
     }
 
+
+    @Override
+    protected  void onPause() {
+        super.onPause();
+        if (mAnim.isRunning()){
+            mAnim.stop();
+        }
+
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocused)
+    {
+        super.onWindowFocusChanged(hasFocused);
+        if(hasFocused) {
+            mAnim.start();
+        }
+    }
 
 
     @Override
