@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeBaseActivity;
@@ -22,6 +23,7 @@ public class VideoActivity extends YouTubeBaseActivity implements
     // Let It Go : "Frozen"
 
     private String VIDEO_ID;
+    private String TOPIC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
@@ -29,6 +31,9 @@ public class VideoActivity extends YouTubeBaseActivity implements
         setContentView(R.layout.activity_video);
         Bundle b = getIntent().getExtras();
         VIDEO_ID = b.getString("id");
+        TOPIC = b.getString("topic");
+        TextView Textv1 = (TextView) findViewById(R.id.textView);
+        Textv1.setText("Khan Academy Video Topic: " + TOPIC);
 
         YouTubePlayerView youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(API_KEY, this);

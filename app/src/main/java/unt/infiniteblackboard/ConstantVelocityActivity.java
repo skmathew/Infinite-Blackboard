@@ -31,6 +31,8 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_constantvelocity);
 
+        final String[] velocity = getResources().getStringArray(R.array.velocity);
+
         TextView Textv1 = (TextView) findViewById(R.id.textView1);
         final String texts1 = Textv1.getText().toString();
 
@@ -39,7 +41,10 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
         mAnim = (AnimationDrawable) imageView.getBackground();
 
         textView = (TextView) findViewById(R.id.myImageViewText);
-        textView.setText(Html.fromHtml(getString(R.string.Acc)));
+        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+
+        textView = (TextView) findViewById(R.id.textView1);
+        textView.setText(velocity[0]);
 
         TextView tv = (TextView) findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
@@ -87,10 +92,10 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq
                         )));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 2:
@@ -106,9 +111,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(getString(R.string.Vel_1));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 3:
@@ -124,9 +129,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_2)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -143,9 +148,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_3)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -162,9 +167,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_4)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 6:
@@ -180,9 +185,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_5)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -199,9 +204,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_6)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -218,9 +223,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_7)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 9:
@@ -235,9 +240,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_8)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -253,9 +258,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_9)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 11:
@@ -270,9 +275,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_10)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 12:
@@ -287,9 +292,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_11)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 13:
@@ -304,9 +309,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_12)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -322,9 +327,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_13)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 15:
@@ -339,9 +344,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_14)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 16:
@@ -356,9 +361,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_15)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 17:
@@ -373,9 +378,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_16)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -409,9 +414,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_1)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 1:
@@ -426,9 +431,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(getString(R.string.Vel_2));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 2:
@@ -443,9 +448,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_3)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -461,9 +466,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_4)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -479,9 +484,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_5)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 5:
@@ -496,9 +501,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_6)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -515,9 +520,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_7)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -533,9 +538,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_8)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 8:
@@ -550,9 +555,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_9)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 9:
@@ -567,9 +572,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_10)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 10:
@@ -584,9 +589,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_11)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 11:
@@ -601,9 +606,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_12)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 12:
@@ -618,9 +623,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_13)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 13:
@@ -635,9 +640,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_14)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 14:
@@ -652,9 +657,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_15)));
+                        textView.setText(velocity[count]);
                         break;
 
 
@@ -670,9 +675,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_16)));
+                        textView.setText(velocity[count]);
                         break;
 
                     case 16:
@@ -687,9 +692,9 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Acc_eq1)));
+                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_17)));
+                        textView.setText(velocity[count]);
                         break;
 
 
