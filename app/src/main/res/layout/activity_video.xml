@@ -3,7 +3,6 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"
-    android:background="#000000"
 tools:context=".VideoActivity">
 
 <LinearLayout
@@ -17,7 +16,7 @@ tools:context=".VideoActivity">
         android:layout_height="fill_parent">
         <com.google.android.youtube.player.YouTubePlayerView
             android:id="@+id/youtube_view"
-            android:layout_marginTop="160dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
