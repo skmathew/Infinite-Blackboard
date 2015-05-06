@@ -19,9 +19,6 @@ public class VideoActivity extends YouTubeBaseActivity implements
     private static final int RECOVERY_DIALOG_REQUEST = 10;
     public static final String API_KEY = "AIzaSyA_PzQFAzM26Sz7LPg-Bowl2_JvxnPqxoc";
 
-    //From URL -> https://www.youtube.com/watch?v=kHue-HaXXzg
-    // Let It Go : "Frozen"
-
     private String VIDEO_ID;
     private String TOPIC;
     @Override

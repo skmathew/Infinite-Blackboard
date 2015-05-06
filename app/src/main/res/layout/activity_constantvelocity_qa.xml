@@ -68,6 +68,20 @@
                 android:gravity = "top|left"
                 />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/textView2"
+                android:gravity = "top|right"
+                android:enabled="false"
+                android:visibility="invisible"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/imageViewtop"
+                android:layout_centerHorizontal="true" />
+
         </RelativeLayout>
 
         <TextView
@@ -78,59 +92,46 @@
             android:textStyle="bold|italic" />
 
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-        <RadioGroup
-            android:layout_width="fill_parent"
-            android:layout_height="123dp"
-            android:id="@+id/rdoGroup"
-            android:minHeight="200dp"
-            android:minWidth="200dp"
-            android:focusableInTouchMode="false"
-            android:nestedScrollingEnabled="true">
-
-            <RadioButton
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RadioGroup
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/VelQAa1"
-                android:id="@+id/radioButton" />
+                android:layout_height="123dp"
+                android:id="@+id/rdoGroup"
+                android:minHeight="200dp"
+                android:minWidth="200dp"
+                android:focusableInTouchMode="false"
+                android:nestedScrollingEnabled="true">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/VelQAa2"
-                android:id="@+id/radioButton2" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VelQAa1"
+                    android:id="@+id/radioButton" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/VelQAa3"
-                android:id="@+id/radioButton3" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VelQAa2"
+                    android:id="@+id/radioButton2" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/VelQAa4"
-                android:id="@+id/radioButton4" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VelQAa3"
+                    android:id="@+id/radioButton3" />
 
-        </RadioGroup>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/VelQAa4"
+                    android:id="@+id/radioButton4" />
+
+            </RadioGroup>
 
 
-</ScrollView>
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@+id/rdoGroup"
-            android:layout_above="@+id/submit_button"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
-            android:id="@+id/textView2"
-            android:gravity = "top|right"
-            android:enabled="false"
-            android:visibility="invisible"
-            android:textStyle="bold" />
+        </ScrollView>
 
     </LinearLayout>
 
