@@ -3,7 +3,7 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent"
-android:background="#FFFFFF"
+android:background="#000000"
 tools:context=".VideoActivity">
 
 <LinearLayout
@@ -30,6 +30,7 @@ tools:context=".VideoActivity">
         android:id="@+id/textView"
         android:text="none"
         android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"
         />
 
 
