@@ -36,8 +36,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
         imageViewtop.setImageResource(R.drawable.chart);
         textView = (TextView) findViewById(R.id.myImageViewText);
-        textView.setText(Html.fromHtml(getString(R.string.Vel_eq
-        )));
+        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
         textView = (TextView) findViewById(R.id.textView1);
         textView.setText(Html.fromHtml(getString(R.string.VelQA)));
 
@@ -170,9 +169,13 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         TextView result = (TextView) findViewById(R.id.textView2);
                         result.setVisibility(View.VISIBLE);
                         RadioButton correctAnswer = (RadioButton) findViewById(R.id.radioButton);
+
+                        String equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
+                        String explanation = ""; //Sets the explanation to explain why the correct answer is correct
+
                         if(correctAnswer.isChecked())
                         {
-                            result.setText("Correct!");
+                            result.setText(Html.fromHtml("Correct!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                             result.setTextColor(Color.GREEN);
                             //ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
@@ -186,7 +189,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         }
                         else
                         {
-                            result.setText("Incorrect! Try again!");
+                            result.setText(Html.fromHtml("Incorrect! Try again!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                             result.setTextColor(Color.RED);
                             //ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
@@ -203,9 +206,13 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         result = (TextView) findViewById(R.id.textView2);
                         result.setVisibility(View.VISIBLE);
                         correctAnswer = (RadioButton) findViewById(R.id.radioButton2);
+
+                	    equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
+                	    explanation = ""; //Sets the explanation to explain why the correct answer is correct
+
                         if(correctAnswer.isChecked())
                         {
-                            result.setText("Correct!");
+                            result.setText(Html.fromHtml("Correct!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                             result.setTextColor(Color.GREEN);
                             //ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
@@ -219,7 +226,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         }
                         else
                         {
-                            result.setText("Incorrect! Try again!");
+                            result.setText(Html.fromHtml("Incorrect! Try again!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
                             result.setTextColor(Color.RED);
                             //ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);

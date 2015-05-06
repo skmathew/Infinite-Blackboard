@@ -78,7 +78,9 @@
             android:textStyle="bold|italic" />
 
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="123dp"
@@ -114,22 +116,24 @@
 
         </RadioGroup>
 
+
+</ScrollView>
+
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
+            android:layout_below="@+id/rdoGroup"
+            android:layout_above="@+id/submit_button"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
             android:id="@+id/textView2"
             android:gravity = "top|right"
-
             android:enabled="false"
             android:visibility="invisible"
             android:textStyle="bold" />
 
-
-
-
     </LinearLayout>
+
 
 
     <Button

@@ -2,6 +2,7 @@ package unt.infiniteblackboard;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
@@ -25,8 +26,8 @@ public class MainActivity extends ActionBarActivity {
     private ListView mainListView ;
     private ArrayAdapter<String> listAdapter ;
     int[] images = {R.drawable.blackbaord,R.drawable.youtube,R.drawable.test};
-
-
+    private AnimationDrawable mAnim;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,11 @@ public class MainActivity extends ActionBarActivity {
         mainListView.setAdapter( listAdapter );
 
 */
+
+        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setBackgroundResource(R.drawable.view_animation2);
+        mAnim = (AnimationDrawable) imageView.getBackground();
+
         String[] sections = getResources().getStringArray(R.array.sections);
 
         mainListView = (ListView) findViewById( R.id.mainListView );
@@ -68,6 +74,7 @@ public class MainActivity extends ActionBarActivity {
                     case 1:
                         intent = new Intent(MainActivity.this, VideoActivity.class);
                         intent.putExtra("id", "d-_eqgj5-K8");
+                        intent.putExtra("topic", "Constant Velocity");
                         startActivity(intent);
                         break;
 
@@ -100,11 +107,46 @@ public class MainActivity extends ActionBarActivity {
                     case 7:
                         intent = new Intent(MainActivity.this, VideoActivity.class);
                         intent.putExtra("id", "zAx61CO5mDw");
+                        intent.putExtra("topic", "Speed");
                         startActivity(intent);
                         break;
 
                     case 8:
                         intent = new Intent(MainActivity.this, SpeedQAActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 9:
+                        intent = new Intent(MainActivity.this, AccelerationActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 10:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "FOkQszg1-j8");
+                        intent.putExtra("topic", "Acceleration");
+                        startActivity(intent);
+                        break;
+
+                    case 11:
+                        intent = new Intent(MainActivity.this, AccelerationQAActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 12:
+                        intent = new Intent(MainActivity.this, OneDMotionActivity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 13:
+                        intent = new Intent(MainActivity.this, VideoActivity.class);
+                        intent.putExtra("id", "8wZugqi_uCg");
+                        intent.putExtra("topic", "1-D Motion");
+                        startActivity(intent);
+                        break;
+
+                    case 14:
+                        intent = new Intent(MainActivity.this, OneDMotionQAActivity.class);
                         startActivity(intent);
                         break;
 
@@ -118,6 +160,24 @@ public class MainActivity extends ActionBarActivity {
         ScoreKeeper.clearScore(this);
     }
 
+
+    @Override
+    protected  void onPause() {
+        super.onPause();
+        if (mAnim.isRunning()){
+            mAnim.stop();
+        }
+
+    }
+
+    @Override
+    public void onWindowFocusChanged(boolean hasFocused)
+    {
+        super.onWindowFocusChanged(hasFocused);
+        if(hasFocused) {
+            mAnim.start();
+        }
+    }
 
 
     @Override
