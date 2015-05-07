@@ -109,21 +109,38 @@
     <string name="Spd_eq"><![CDATA[ Speed = <sup>distance moved/</sup>time ]]></string>
     <string name="Spd2_eq"><![CDATA[ Distance = time * speed ]]></string>
 
-    <string name="VelQA">What do you think the distance in the formula looks like in the our picture?</string>
-    <string name="VelQA1">In less time you travel less distance. How far do you think you travel in 3/4 of a second?</string>
+    <string name="SpdQA">If Jane drives at an average speed of 45 mph on a journey of 135 miles, how long does the trip take?</string>
+    <string name="SpdQA1">Chris cycles at an average speed of 8 mph, if he cycles for 6 1/2 hours, how far does he travel?</string>
+    <string name="SpdQA2">Nikki has to travel a total of 351 miles. She travels the first 216 miles in 4 hours. What is her average speed for the first part of the journey?</string>
+    <string name="SpdQA3">Looking back, Nikke noticed that her average speed was the same for the whole time, how long does the whole journey take then?</string>
 
-    <string name="VelQAa1">Area</string>
-    <string name="VelQAa2">Volume</string>
-    <string name="VelQAa3">Speed</string>
-    <string name="VelQAa4">I don\'t know</string>
+    <string name="SpdQAa1">3 hours</string>
+    <string name="SpdQAa2">5 hours</string>
+    <string name="SpdQAa3">2 hours</string>
+    <string name="SpdQAa4">8 hours</string>
 
-    <string name="VelQA1a1">88 ft</string>
-    <string name="VelQA1a2">66 ft</string>
-    <string name="VelQA1a3">44 ft</string>
-    <string name="VelQA1a4">I don\'t know</string>
+    <string name="SpdQAAnswer">To find a time, we need to divide distance by speed.</string>
 
+    <string name="SpdQA1a1">88 miles</string>
+    <string name="SpdQA1a2">96 miles</string>
+    <string name="SpdQA1a3">34 miles</string>
+    <string name="SpdQA1a4">52 miles</string>
 
+    <string name="SpdQA1Answer">To find a distance, we need to multiply speed by time.</string>
 
+    <string name="SpdQA2a1">36 mph</string>
+    <string name="SpdQA2a2">54 mph</string>
+    <string name="SpdQA2a3">72 mph</string>
+    <string name="SpdQA2a4">40 mph</string>
+
+    <string name="SpdQA2Answer">To find average speed, we need to divide distance by time.</string>
+
+    <string name="SpdQA3a1">8.0 hours</string>
+    <string name="SpdQA3a2">3.5 hours</string>
+    <string name="SpdQA3a3">6.5 hours</string>
+    <string name="SpdQA3a4">5.0 hours</string>
+
+    <string name="SpdQA3Answer">To find time, we need to divide distance by speed.</string>
 
     // Acceleration String
 

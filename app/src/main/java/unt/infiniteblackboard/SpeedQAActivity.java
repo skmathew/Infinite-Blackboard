@@ -21,7 +21,7 @@ public class SpeedQAActivity extends ActionBarActivity {
     private AnimationDrawable mAnim;
     private int count = 0;
     private int answer[] = new int[] {0,0,0,0,0,0};
-    private int total = 2;
+    private int total = 4;
 
 
 
@@ -38,10 +38,10 @@ public class SpeedQAActivity extends ActionBarActivity {
         textView = (TextView) findViewById(R.id.myImageViewText);
         textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
         textView = (TextView) findViewById(R.id.textView1);
-        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+        textView.setText(Html.fromHtml(getString(R.string.SpdQA)));
 
         textView = (TextView) findViewById(R.id.Score);
-        textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
+        textView.setText(answer[0]+answer[1]+answer[2]+answer[3]+answer[4] + " out of " + total);
 
 
 
@@ -62,7 +62,7 @@ public class SpeedQAActivity extends ActionBarActivity {
             public void onClick(View arg0) {
 
                 // Start NewActivity.class
-                Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
+                Intent myIntent = new Intent(SpeedQAActivity.this,
                         MainActivity.class);
                 startActivity(myIntent);
             }
@@ -90,24 +90,24 @@ public class SpeedQAActivity extends ActionBarActivity {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.VelQA)));
+                        textView.setText(Html.fromHtml(getString(R.string.SpdQA)));
                         RadioButton answer = (RadioButton) findViewById(R.id.radioButton);
-                        answer.setText(R.string.VelQAa1);
+                        answer.setText(R.string.SpdQAa1);
                         answer = (RadioButton) findViewById(R.id.radioButton2);
-                        answer.setText(R.string.VelQAa2);
+                        answer.setText(R.string.SpdQAa2);
                         answer = (RadioButton) findViewById(R.id.radioButton3);
-                        answer.setText(R.string.VelQAa3);
+                        answer.setText(R.string.SpdQAa3);
                         answer = (RadioButton) findViewById(R.id.radioButton4);
-                        answer.setText(R.string.VelQAa4);
+                        answer.setText(R.string.SpdQAa4);
                         break;
 
 
 
                     default:
                         // Start
-                        Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
+                        Intent myIntent = new Intent(SpeedQAActivity.this,
                                 MainActivity.class);
                         startActivity(myIntent);
                 }
@@ -137,22 +137,22 @@ public class SpeedQAActivity extends ActionBarActivity {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(Html.fromHtml(getString(R.string.VelQA1)));
+                        textView.setText(Html.fromHtml(getString(R.string.SpdQA1)));
                         RadioButton answer = (RadioButton) findViewById(R.id.radioButton);
-                        answer.setText(R.string.VelQA1a1);
+                        answer.setText(R.string.SpdQA1a1);
                         answer = (RadioButton) findViewById(R.id.radioButton2);
-                        answer.setText(R.string.VelQA1a2);
+                        answer.setText(R.string.SpdQA1a2);
                         answer = (RadioButton) findViewById(R.id.radioButton3);
-                        answer.setText(R.string.VelQA1a3);
+                        answer.setText(R.string.SpdQA1a3);
                         answer = (RadioButton) findViewById(R.id.radioButton4);
-                        answer.setText(R.string.VelQA1a4);
+                        answer.setText(R.string.SpdQA1a4);
                         break;
 
                     default:
                         // Start
-                        Intent myIntent = new Intent(ConstantVelocityQAActivity.this,
+                        Intent myIntent = new Intent(SpeedQAActivity.this,
                                 MainActivity.class);
                         startActivity(myIntent);
                 }
@@ -205,7 +205,7 @@ public class SpeedQAActivity extends ActionBarActivity {
                     case 1:
                         result = (TextView) findViewById(R.id.textView2);
                         result.setVisibility(View.VISIBLE);
-                        correctAnswer = (RadioButton) findViewById(R.id.radioButton2);
+                        correctAnswer = (RadioButton) findViewById(R.id.radioButton);
 
                         equation = getString(R.string.test_string); //Grabs an HTML tagged equation from strings.xml as a string
                         explanation = ""; //Sets the explanation to explain why the correct answer is correct
