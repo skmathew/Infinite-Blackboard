@@ -42,6 +42,7 @@
     <item>2-D Motion Q/A</item>
     </string-array>
 
+       //Velocity String
 
     <string-array name="velocity">
         <item>Welcome! I would like to help you better understand Constant Velocity.</item>
@@ -51,7 +52,7 @@
         <item>We will see why it\'s important to think in terms of "the change of" in the definition when we talk about acceleration.</item>
         <item>Now, this certainly one way of defining velocity, but there is another way of saying the same thing.</item>
         <item>We could also say that the distance traveled is proportional to the time of travel, and velocity is the proportionality constant.</item>
-        <item>Thinking of distance as the product of velocity and time allows us to visualize this idea with a picture we can draw on the blackbord.</item>
+        <item>Thinking of distance as the product of velocity and time allows us to visualize this idea with a picture we can draw on the blackboard.</item>
         <item>Let\'s start with trying to think about velocity in a different direction.</item>
         <item>Let\'s think of velocity as going upward. It\'s like the faster you go, the higher we are on the vertical axis.</item>
         <item>And then we think of time as going ogg to the right.</item>
@@ -64,21 +65,8 @@
         <item>...depending on time. In a second you travel 88 feet.</item>
     </string-array>
 
-    <string-array name="speed">
-        <item>Now we shall continue on to Speed and see how it is related to Velocity.</item>
-        <item>First, we shall begin with the definition.</item>
-        <item>Just as distance and displacement have small different meanings, although they are very similar, so do speed and velocity.</item>
-        <item>Speed is a scalar quantity that refers to "how fast an object is moving."</item>
-        <item>It can be thought of as the rate at which an object covers a specific distance.</item>
-        <item>A fast-moving object has a high speed and covers a relatively large distance in a short amount of time.</item>
-        <item>Whereas a slow-moving object that has a low speed, will only cover a relatively small amount of distance in the same amount of time.</item>
-        <item>And of course an object with no movement at all has a zero speed, since you cannot measure the distance covered when it went no where at all.</item>
-    </string-array>
-
-
     <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
     <string name="Vel5_eq"><![CDATA[ Distance= Velocity * time ]]></string>
-
 
     <string name="VelQA">What do you think the distance in the formula looks like in the our picture?</string>
     <string name="VelQA1">In less time you travel less distance. How far do you think you travel in 3/4 of a second?</string>
@@ -92,6 +80,48 @@
     <string name="VelQA1a2">66 ft</string>
     <string name="VelQA1a3">44 ft</string>
     <string name="VelQA1a4">I don\'t know</string>
+
+
+    //Speed Strings
+
+    <string-array name="speed">
+        <item>Now we shall continue on to Speed and see how it is related to Velocity.</item>
+        <item>First, we shall begin with the definition.</item>
+        <item>Just as distance and displacement have small different meanings, although they are very similar, so do speed and velocity.</item>
+        <item>Speed is a scalar quantity that refers to "how fast an object is moving."</item>
+        <item>It can be thought of as the rate at which an object covers a specific distance.</item>
+        <item>A fast-moving object has a high speed and covers a relatively large distance in a short amount of time.</item>
+        <item>Whereas a slow-moving object that has a low speed, will only cover a relatively small amount of distance in the same amount of time.</item>
+        <item>And of course an object with no movement at all has a zero speed, since you cannot measure the distance covered when it went no where at all.</item>
+        <item>So in other words, as long as you make a movement in any direction, you build up speed.</item>
+        <item>Like velocity, speed has the dimensions of length divided by time, and it is usually measured in meters per second or miles per hour.</item>
+        <item>Here is an example. Say you\'re driving to a vacation get away, you traveled a total distance of 440 miles, and the trip took 8 hours. What was your speed?</item>
+        <item>So using the formula of distance moved divided by time, you would place the total miles you drove (440 miles) and divide by the time it took you (8 hours).</item>
+        <item>Don\'t forget to look at the units you are working with, in this case we are using miles per hour.</item>
+        <item>So you complete the simple equation, dividing 440 by 8, and you should receive...</item>
+        <item>... 55 miles per hour! So on your trip your speed averaged out to be about 55 miles per hour...</item>
+        <item>... look at you, driving below the speed limit!</item>
+        <item>Now this is not saying that you only went 55 miles an hour the entire time, but that you averaged at 55.</item>
+        <item>Maybe you stopped for a bathroom break or some food, you also could have speed up at some points, maybe driving up to 70 miles an hour, but this is an example of Average Speed.</item>
+        <item>Measuring speed can be broken down into 3 different areas: Average Speed, Instantaneous Speed, and Tangential Speed.</item>
+    </string-array>
+
+    <string name="Spd_eq"><![CDATA[ Speed = <sup>distance moved/</sup>time ]]></string>
+    <string name="Spd2_eq"><![CDATA[ Distance = time * speed ]]></string>
+
+    <string name="VelQA">What do you think the distance in the formula looks like in the our picture?</string>
+    <string name="VelQA1">In less time you travel less distance. How far do you think you travel in 3/4 of a second?</string>
+
+    <string name="VelQAa1">Area</string>
+    <string name="VelQAa2">Volume</string>
+    <string name="VelQAa3">Speed</string>
+    <string name="VelQAa4">I don\'t know</string>
+
+    <string name="VelQA1a1">88 ft</string>
+    <string name="VelQA1a2">66 ft</string>
+    <string name="VelQA1a3">44 ft</string>
+    <string name="VelQA1a4">I don\'t know</string>
+
 
 
 

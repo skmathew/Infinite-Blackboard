@@ -14,14 +14,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class SpeedActivity extends ActionBarActivity  {
+public class SpeedActivity extends ActionBarActivity {
 
     ImageView imageView, imageViewtop;
     TextView textView;
     private AnimationDrawable mAnim;
     private int count = 0;
-
-
 
 
     //K7BOH-Ll8_g
@@ -31,7 +29,7 @@ public class SpeedActivity extends ActionBarActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_speed);
 
-        final String[] velocity = getResources().getStringArray(R.array.velocity);
+        final String[] speed = getResources().getStringArray(R.array.speed);
 
         TextView Textv1 = (TextView) findViewById(R.id.textView1);
         final String texts1 = Textv1.getText().toString();
@@ -41,10 +39,10 @@ public class SpeedActivity extends ActionBarActivity  {
         mAnim = (AnimationDrawable) imageView.getBackground();
 
         textView = (TextView) findViewById(R.id.myImageViewText);
-        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
 
         textView = (TextView) findViewById(R.id.textView1);
-        textView.setText(velocity[0]);
+        textView.setText(speed[0]);
 
         TextView tv = (TextView) findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
@@ -78,10 +76,10 @@ public class SpeedActivity extends ActionBarActivity  {
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                switch (count){
+                switch (count) {
                     case 1:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -92,15 +90,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq
                         )));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 2:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -111,14 +109,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 3:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -129,15 +127,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 4:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -148,15 +146,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 5:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -167,14 +165,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 6:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -185,15 +183,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 7:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -204,15 +202,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 8:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -223,14 +221,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 9:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -240,15 +238,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 10:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -258,14 +256,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 11:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -275,14 +273,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 12:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -292,14 +290,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 13:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -309,15 +307,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 14:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -327,14 +325,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 15:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -344,14 +342,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 16:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -361,14 +359,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 17:
                         count--;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -378,9 +376,9 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
@@ -394,17 +392,14 @@ public class SpeedActivity extends ActionBarActivity  {
         });
 
 
-
-
-
         // Capture button clicks next button
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
-                switch (count){
+                switch (count) {
                     case 0:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -414,14 +409,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 1:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -431,14 +426,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 2:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -448,15 +443,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 3:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -466,15 +461,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 4:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -484,14 +479,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 5:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -501,15 +496,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 6:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -520,15 +515,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 7:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -538,14 +533,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 8:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -555,14 +550,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 9:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -572,14 +567,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 10:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -589,14 +584,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 11:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -606,14 +601,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 12:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -623,14 +618,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 13:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -640,14 +635,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 14:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -657,15 +652,15 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
 
                     case 15:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -675,14 +670,14 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
 
                     case 16:
                         count++;
-                        if (mAnim.isRunning()){
+                        if (mAnim.isRunning()) {
                             mAnim.stop();
                         }
                         imageView = (ImageView) findViewById(R.id.imageView);
@@ -692,11 +687,10 @@ public class SpeedActivity extends ActionBarActivity  {
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
-                        textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
+                        textView.setText(Html.fromHtml(getString(R.string.Spd2_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
-                        textView.setText(velocity[count]);
+                        textView.setText(speed[count]);
                         break;
-
 
 
                     default:
@@ -713,22 +707,20 @@ public class SpeedActivity extends ActionBarActivity  {
     }
 
 
-
     //
     @Override
-    protected  void onPause() {
+    protected void onPause() {
         super.onPause();
-        if (mAnim.isRunning()){
+        if (mAnim.isRunning()) {
             mAnim.stop();
         }
 
     }
 
     @Override
-    public void onWindowFocusChanged(boolean hasFocused)
-    {
+    public void onWindowFocusChanged(boolean hasFocused) {
         super.onWindowFocusChanged(hasFocused);
-        if(hasFocused) {
+        if (hasFocused) {
             mAnim.start();
         }
     }
@@ -738,6 +730,7 @@ public class SpeedActivity extends ActionBarActivity  {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.activity_speed, menu);
+        inflater.inflate(R.menu.menu_speed, menu);
         return super.onCreateOptionsMenu(menu);
     }
+}
