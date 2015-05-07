@@ -176,7 +176,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         if(correctAnswer.isChecked())
                         {
                             result.setText(Html.fromHtml("Correct!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
-                            result.setTextColor(Color.GREEN);
+                            result.setTextColor(Color.WHITE);
                             //ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                             button2.setEnabled(true);
@@ -190,7 +190,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         else
                         {
                             result.setText(Html.fromHtml("Incorrect! Try again!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
-                            result.setTextColor(Color.RED);
+                            result.setTextColor(Color.WHITE);
                             //ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                             if (answer[0]==1)
@@ -213,7 +213,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         if(correctAnswer.isChecked())
                         {
                             result.setText(Html.fromHtml("Correct!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
-                            result.setTextColor(Color.GREEN);
+                            result.setTextColor(Color.WHITE);
                             //ScoreKeeper.addPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                             button2.setEnabled(true);
@@ -227,7 +227,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         else
                         {
                             result.setText(Html.fromHtml("Incorrect! Try again!<br><br>" + explanation)); //Displays the results of the user's answer according to the HTML tags
-                            result.setTextColor(Color.RED);
+                            result.setTextColor(Color.WHITE);
                             //ScoreKeeper.subtractPoint(getApplicationContext(), ConstantVelocityQAActivity.class.getSimpleName());
                             //ScoreKeeper.updateScore(getApplicationContext(),numberCorrectText);
                             if (answer[1]==1)
