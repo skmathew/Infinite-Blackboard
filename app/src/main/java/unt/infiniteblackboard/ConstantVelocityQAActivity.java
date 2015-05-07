@@ -1,6 +1,7 @@
 package unt.infiniteblackboard;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -95,6 +96,11 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         textView.setText(Html.fromHtml(getString(R.string.VelQA)));
                         RadioButton answer = (RadioButton) findViewById(R.id.radioButton);
                         answer.setText(R.string.VelQAa1);
+
+                        //answer.setTextColor(Color.WHITE);
+                        //int textColor = Color.parseColor(#000000);
+                        //answer.setButtonTintList(ColorStateList.valueOf(textColor));
+
                         answer = (RadioButton) findViewById(R.id.radioButton2);
                         answer.setText(R.string.VelQAa2);
                         answer = (RadioButton) findViewById(R.id.radioButton3);

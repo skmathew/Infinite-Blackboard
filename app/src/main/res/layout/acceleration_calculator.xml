@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout android:id="@+id/widget0"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acceleration Calculator"
+        android:id="@+id/textView1"
+        android:layout_x="45dp"
+        android:layout_y="40dp"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF">
+    </TextView>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </ScrollView>
+    <TextView android:layout_width="wrap_content"
+        android:layout_x="40dp"
+        android:layout_height="wrap_content"
+        android:text="Initial Velocity (m/s):"
+        android:id="@+id/textView2"
+        android:layout_y="102dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+    </TextView>
+
+    <EditText android:text=""
+        android:layout_width="120dp"
+        android:layout_x="40dp"
+        android:id="@+id/amount1"
+        android:layout_height="wrap_content"
+        android:layout_y="132dp"
+        android:background="#FFFFFF"
+        android:inputType="phone">
+    </EditText>
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Initial Time (s)"
+        android:id="@+id/textView3"
+        android:layout_x="40dp"
+        android:layout_y="169dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF">
+    </TextView>
+
+    <EditText android:text=""
+        android:layout_width="120dp"
+        android:layout_x="40dp"
+        android:id="@+id/amount2"
+        android:layout_height="wrap_content"
+        android:layout_y="198dp"
+        android:background="#FFFFFF"
+        android:inputType="phone"
+        android:imeOptions="actionDone">
+    </EditText>
+
+    <Button android:layout_width="wrap_content"
+        android:id="@+id/calculate"
+        android:layout_x="40dp"
+        android:layout_height="wrap_content"
+        android:text="Calculate Acceleration (m/s^2)"
+        android:textStyle="bold"
+        android:layout_y="244dp"
+        >
+    </Button>
+
+    <EditText android:text=""
+        android:layout_width="300dp"
+        android:layout_x="40dp"
+        android:id="@+id/tt"
+        android:layout_height="35dp"
+        android:layout_y="310dp"
+        android:background="#FFFFFF"
+        android:inputType="phone">
+    </EditText>
+
+    <Button
+        android:id="@+id/Home_button"
+        android:layout_width="fill_parent"
+        android:text="@string/Home_text"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:layout_x="0dp"
+        android:layout_y="520dp">
+    </Button>
+
+    <ImageView
+        android:layout_width="349dp"
+        android:layout_height="152dp"
+        android:id="@+id/imageView2"
+        android:layout_x="10dp"
+        android:layout_y="330dp"
+        android:src="@drawable/accelerationformula"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Final Velocity (m/s):"
+        android:id="@+id/textView4"
+        android:layout_x="210dp"
+        android:layout_y="102dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Final Time (s):"
+        android:id="@+id/textView5"
+        android:layout_x="210dp"
+        android:layout_y="169dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <EditText android:text=""
+        android:layout_width="120dp"
+        android:layout_x="210dp"
+        android:id="@+id/amount3"
+        android:layout_height="wrap_content"
+        android:layout_y="132dp"
+        android:background="#FFFFFF"
+        android:inputType="phone">
+    </EditText>
+
+    <EditText android:text=""
+        android:layout_width="120dp"
+        android:layout_x="210dp"
+        android:id="@+id/amount4"
+        android:layout_height="wrap_content"
+        android:layout_y="198dp"
+        android:background="#FFFFFF"
+        android:inputType="phone">
+    </EditText>
+
+</AbsoluteLayout>

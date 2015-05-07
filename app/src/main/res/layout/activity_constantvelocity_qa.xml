@@ -9,7 +9,8 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:background="#000000">
 
 
         <RelativeLayout
@@ -75,12 +76,14 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/VelQA"
-            android:textStyle="bold|italic" />
+            android:textStyle="bold|italic"
+            android:textColor="#FFFFFF"/>
 
 
 <ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
         <RadioGroup
             android:layout_width="fill_parent"
             android:layout_height="123dp"
@@ -94,25 +97,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/VelQAa1"
-                android:id="@+id/radioButton" />
+                android:id="@+id/radioButton"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:button="@drawable/checkbox_background"
+                android:paddingLeft="4dp"
+                />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/VelQAa2"
-                android:id="@+id/radioButton2" />
+                android:id="@+id/radioButton2"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:button="@drawable/checkbox_background"
+                android:paddingLeft="4dp"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/VelQAa3"
-                android:id="@+id/radioButton3" />
+                android:id="@+id/radioButton3"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:button="@drawable/checkbox_background"
+                android:paddingLeft="4dp"/>
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/VelQAa4"
-                android:id="@+id/radioButton4" />
+                android:id="@+id/radioButton4"
+                android:textStyle="bold|italic"
+                android:textColor="#FFFFFF"
+                android:button="@drawable/checkbox_background"
+                android:paddingLeft="4dp"/>
 
         </RadioGroup>
 

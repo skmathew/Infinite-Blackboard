@@ -24,21 +24,27 @@
     <string-array name="sections">
     <item>Constant Velocity</item>
     <item>Constant Velocity Youtube Video</item>
+    <item>Constant Velocity Calculator</item>
     <item>Constant Velocity Q/A</item>
     <item>Average Velocity</item>
     <item>Average Velocity Youtube Video</item>
+    <item>Average Velocity Calculator</item>
     <item>Average Velocity Q/A</item>
     <item>Speed</item>
     <item>Speed Youtube Video</item>
+    <item>Speed Calculator</item>
     <item>Speed Q/A</item>
     <item>Acceleration</item>
     <item>Acceleration Youtube Video</item>
+    <item>Acceleration Calculator</item>
     <item>Acceleration Q/A</item>
     <item>1-D Motion</item>
     <item>1-D Motion Youtube Video</item>
+    <item>1-D Calculator</item>
     <item>1-D Motion Q/A</item>
     <item>2-D Motion</item>
     <item>2-D Motion Youtube Video</item>
+    <item>2-D Calculator</item>
     <item>2-D Motion Q/A</item>
     </string-array>
 
@@ -213,12 +219,18 @@
     <string name="title_activity_acceleration">Infinite Blackboard</string>
     <string name="title_activity_acceleration_qa">Infinite Blackboard</string>
     <string name="title_activity_speed">Infinite Blackboard</string>
+    <string name="title_activity_speed_calculator">Speed Calculator</string>
     <string name="title_activity_speed_qa">Infinite Blackboard</string>
     <string name="title_activity_velocity">VelocityActivity</string>
     <string name="title_activity_velocity_video">VelocityVideo</string>
     <string name="title_activity_velocity_qa">VelocityQAActivity</string>
     <string name="title_activity_one_dmotion">OneDMotionActivity</string>
     <string name="title_activity_one_dmotion_qa">OneDMotionQAActivity</string>
+    <string name="title_activity_constant_velocity_calculator">Constant Velocity Calculator</string>
+    <string name="title_activity_average_velocity_calculator">Average Velocity Calculator</string>
+    <string name="title_activity_acceleration_calculator">Acceleration Calculator</string>
+    <string name="title_activity_oned_calculator">One D Motion Calculator</string>
+    <string name="title_activity_twod_calculator">Two D Motion Calculator</string>
 
     <string name="oned_id1">1-dimensional motion is kinetics dealing with just one direction! With 1D motion, we only must consider the horizontal motion! This is portrayed through a straight line. It is when an object is traveling horizontally.</string>
     <string name="oned_id2">A very common example of this speeding a car. The path of the car often follows a straight path that only travels horizontally. We\'ll be using the four kinematic equations to determine the displacement, time, velocity, or acceleration at any given moment during the projectile\'s motion.</string>
