@@ -64,7 +64,16 @@
         <item>...depending on time. In a second you travel 88 feet.</item>
     </string-array>
 
-
+    <string-array name="speed">
+        <item>Now we shall continue on to Speed and see how it is related to Velocity.</item>
+        <item>First, we shall begin with the definition.</item>
+        <item>Just as distance and displacement have small different meanings, although they are very similar, so do speed and velocity.</item>
+        <item>Speed is a scalar quantity that refers to "how fast an object is moving."</item>
+        <item>It can be thought of as the rate at which an object covers a specific distance.</item>
+        <item>A fast-moving object has a high speed and covers a relatively large distance in a short amount of time.</item>
+        <item>Whereas a slow-moving object that has a low speed, will only cover a relatively small amount of distance in the same amount of time.</item>
+        <item>And of course an object with no movement at all has a zero speed, since you cannot measure the distance covered when it went no where at all.</item>
+    </string-array>
 
 
     <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
@@ -157,10 +166,6 @@
     <string name="displacementquest">
         What is the displacement of the cross-country team if they begin at the school, run 10 miles and finish back at the school?
      </string>string>
-
-    <string name="speed1">
-        In everyday use and in kinematics, the speed of an object is the magnitude of its velocity (the rate of change of its position).
-    </string>
 
     <string name="speed2">
 
