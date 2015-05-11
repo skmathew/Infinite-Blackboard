@@ -34,6 +34,8 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
+        
+        //chart on the blackboard
         imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
         imageViewtop.setImageResource(R.drawable.chart1);
         textView = (TextView) findViewById(R.id.myImageViewText);
@@ -41,9 +43,11 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         Typeface font = Typeface.createFromAsset(getAssets(), "Lucida_Handwrit.ttf");
         textView.setTypeface(font);
 
+        //question
         textView = (TextView) findViewById(R.id.textView1);
         textView.setText(Html.fromHtml(getString(R.string.VelQA)));
 
+        //answers
         textView = (TextView) findViewById(R.id.Score);
         textView.setText(answer[0]+answer[1]+answer[2] + " out of " + total);
 
@@ -72,7 +76,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
             }
         });
 
-        // Capture button clicks
+        // Capture previous button clicks
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
@@ -119,7 +123,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         });
 
 
-        // Capture button clicks
+        // // Capture Next  button clicks
         button2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 
@@ -164,7 +168,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
         });
 
 
-        // Capture radio button clicks
+        // Capture submit  button clicks
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
 

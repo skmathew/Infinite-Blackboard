@@ -29,32 +29,36 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        
+        //use this this layout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blackboard);
 
+        //loads the contents from string.xml file to array named velocity
         final String[] velocity = getResources().getStringArray(R.array.velocity);
 
         TextView Textv1 = (TextView) findViewById(R.id.textView1);
         final String texts1 = Textv1.getText().toString();
 
+        //animation part
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
+        
+        //equations on the board and custom font
         textView = (TextView) findViewById(R.id.myImageViewText);
         Typeface font = Typeface.createFromAsset(getAssets(), "Lucida_Handwrit.ttf");
         textView.setTypeface(font);
-
-
-
-
         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
 
+        //the contents of the page
         textView = (TextView) findViewById(R.id.textView1);
         textView.setText(velocity[0]);
 
         TextView tv = (TextView) findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
 
+        //buttons names
         final Button button = (Button) findViewById(R.id.Home_button);
         final Button button1 = (Button) findViewById(R.id.Previous_Button);
         final Button button2 = (Button) findViewById(R.id.Next_Button);
