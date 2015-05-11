@@ -6,7 +6,7 @@
 4.  In the MainActivity.java file is will populate listview with icons of the sections.
 5.  Use switch statments see which activity is section and start the approriate activity.
 6.  Youtube Activity require youtube video ID to passed from the MainActivity. An example is provided in the MainActivity.java.
-7.  All the questions and centents of other activity are stored in the strings.xml file.
+7.  All the questions and contents of other activity are stored in the strings.xml file.
 8.  If you want to create a new section (including youtube and Q/A), make a a Java Class by right clicking under java->unt.intfiniteblackboard and selecting new Java class.
 9.  You will need to create a Q/A Java Class for the section also. The video class can be reuseable so there is no need to create one.
 10. Make sure the newly created Java Classes are in the android mainfest file. Use the ConstantVelocity as the example for other classes.
