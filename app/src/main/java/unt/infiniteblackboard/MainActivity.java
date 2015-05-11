@@ -1,7 +1,9 @@
 package unt.infiniteblackboard;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -28,6 +30,7 @@ public class MainActivity extends ActionBarActivity {
     int[] images = {R.drawable.blackbaord,R.drawable.youtube,R.drawable.test};
     private AnimationDrawable mAnim;
     ImageView imageView;
+    TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,10 @@ public class MainActivity extends ActionBarActivity {
         mainListView.setAdapter( listAdapter );
 
 */
+
+        textView = (TextView) findViewById(R.id.myImageViewText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "Lucida_Handwrit.ttf");
+        textView.setTypeface(font);
 
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation2);
@@ -83,73 +90,6 @@ public class MainActivity extends ActionBarActivity {
                         startActivity(intent);
                         break;
 
-/*                    case 3:
-                        intent = new Intent(MainActivity.this, AverageVelocityActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case 4:
-                        intent = new Intent(MainActivity.this, VideoActivity.class);
-                        intent.putExtra("id", "oRKxmXwLvUU");
-                        startActivity(intent);
-                        break;
-
-                    case 5:
-                        intent = new Intent(MainActivity.this, AverageVelocityQAActivity.class);
-                        startActivity(intent);
-                        break;
-*/
-                    case 6:
-                        intent = new Intent(MainActivity.this, SpeedActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case 7:
-                        intent = new Intent(MainActivity.this, VideoActivity.class);
-                        intent.putExtra("id", "zAx61CO5mDw");
-                        intent.putExtra("topic", "Speed");
-                        startActivity(intent);
-                        break;
-
-                    case 8:
-                        intent = new Intent(MainActivity.this, SpeedQAActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case 9:
-                        intent = new Intent(MainActivity.this, AccelerationActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case 10:
-                        intent = new Intent(MainActivity.this, VideoActivity.class);
-                        intent.putExtra("id", "FOkQszg1-j8");
-                        intent.putExtra("topic", "Acceleration");
-                        startActivity(intent);
-                        break;
-
-                    case 11:
-                        intent = new Intent(MainActivity.this, AccelerationQAActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case 12:
-                        intent = new Intent(MainActivity.this, OneDMotionActivity.class);
-                        startActivity(intent);
-                        break;
-
-                    case 13:
-                        intent = new Intent(MainActivity.this, VideoActivity.class);
-                        intent.putExtra("id", "8wZugqi_uCg");
-                        intent.putExtra("topic", "1-D Motion");
-                        startActivity(intent);
-                        break;
-
-                    case 14:
-                        intent = new Intent(MainActivity.this, OneDMotionQAActivity.class);
-                        startActivity(intent);
-                        break;
-
                 }
 
             }
@@ -157,7 +97,7 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-        ScoreKeeper.clearScore(this);
+        //ScoreKeeper.clearScore(this);
     }
 
 
@@ -183,7 +123,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
 
@@ -195,66 +135,7 @@ public class MainActivity extends ActionBarActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         //int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        //if (id == R.id.action_settings) {
-        //    return true;
-        //}
-
-        //return super.onOptionsItemSelected(item);
-
         Toast.makeText(getApplicationContext(), item.getTitle() + " selected", Toast.LENGTH_SHORT).show();
-
-        switch (item.getItemId()) {
-            case R.id.displacement_menu:
-                Intent myIntent = new Intent(MainActivity.this,
-                        ConstantVelocityActivity.class);
-                startActivity(myIntent);
-                break;
-            case R.id.speed_menu:
-                Intent myIntent1 = new Intent(MainActivity.this,
-                        SpeedActivity.class);
-                startActivity(myIntent1);
-                break;
-
-            case R.id.velocity_menu:
-                Intent myIntent2 = new Intent(MainActivity.this,
-                        VelocityActivity.class);
-                startActivity(myIntent2);
-                break;
-
-            case R.id.acceleration_menu:
-                Intent myIntent3 = new Intent(MainActivity.this,
-                        AccelerationActivity.class);
-                startActivity(myIntent3);
-                break;
-
-            case R.id.oneD_Motion_menu:
-                Intent myIntent4 = new Intent(MainActivity.this,
-                        OneDMotionActivity.class);
-                startActivity(myIntent4);
-                break;
-
-            case R.id.twoD_Motion_menu:
-                Intent myIntent5 = new Intent(MainActivity.this,
-                        TwoDMotionActivity.class);
-                startActivity(myIntent5);
-                break;
-
-            case R.id.formulas_menu:
-                Intent myIntent6 = new Intent(MainActivity.this,
-                        TwoDMotionActivity.class);
-                startActivity(myIntent6);
-                break;
-
-            case R.id.review_menu:
-                Intent myIntent7 = new Intent(MainActivity.this,
-                        TwoDMotionActivity.class);
-                startActivity(myIntent7);
-                break;
-
-
-        }
         return true;
 
     }
@@ -281,6 +162,9 @@ class VAdapter extends ArrayAdapter<String>
         View row = inflater.inflate(R.layout.single_row,parent,false);
         ImageView myImage = (ImageView) row.findViewById(R.id.imageView);
         TextView myText = (TextView) row.findViewById(R.id.textView);
+
+        myText.setTextColor(Color.WHITE);
+        myText.setTypeface(null, Typeface.BOLD);
 
         myImage.setImageResource(images[position%3]);
         myText.setText(titleArray[position]);

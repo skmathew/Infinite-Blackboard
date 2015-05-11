@@ -47,73 +47,9 @@
 
 
         <activity
-            android:name=".TwoDMotionActivity"
-            android:label="@string/title_activity_two_dmotion"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="unt.infiniteblackboard.MainActivity" />
-        </activity>
-        <activity
-            android:name=".TwoDMotionQAActivity"
-            android:label="@string/title_activity_two_dmotion_qa"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="unt.infiniteblackboard.MainActivity" />
-        </activity>
-        <activity
-            android:name=".AccelerationActivity"
-            android:label="@string/title_activity_acceleration"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="unt.infiniteblackboard.MainActivity" />
-        </activity>
-        <activity
-            android:name=".AccelerationQAActivity"
-            android:label="@string/title_activity_acceleration_qa"
-            android:parentActivityName=".MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="unt.infiniteblackboard.MainActivity" />
-        </activity>
-        <activity
-            android:name=".SpeedActivity"
-            android:label="@string/title_activity_speed" >
-        </activity>
-        <activity
-            android:name=".SpeedQAActivity"
-            android:label="@string/title_activity_speed_qa" >
-        </activity>
-        <activity
-            android:name=".VelocityActivity"
-            android:label="@string/title_activity_velocity" >
-        </activity>
-        <activity
             android:name=".VideoActivity"
             android:label="@string/title_activity_velocity_video"
             android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".VelocityQAActivity"
-            android:label="@string/title_activity_velocity_qa" >
-        </activity>
-        <activity
-            android:name=".OneDMotionActivity"
-            android:label="@string/title_activity_one_dmotion"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="unt.infiniteblackboard.MainActivity" />
-        </activity>
-        <activity
-            android:name=".OneDMotionQAActivity"
-            android:label="@string/title_activity_one_dmotion_qa"
-            android:parentActivityName=".MainActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="unt.infiniteblackboard.MainActivity" />
         </activity>
     </application>
 

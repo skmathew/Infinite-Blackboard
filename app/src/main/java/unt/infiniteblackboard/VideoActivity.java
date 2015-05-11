@@ -30,7 +30,7 @@ public class VideoActivity extends YouTubeBaseActivity implements
         VIDEO_ID = b.getString("id");
         TOPIC = b.getString("topic");
         TextView Textv1 = (TextView) findViewById(R.id.textView);
-        Textv1.setText("Khan Academy Video Topic: " + TOPIC);
+        Textv1.setText("YouTube Video Topic: " + TOPIC);
 
         YouTubePlayerView youTubeView = (YouTubePlayerView) findViewById(R.id.youtube_view);
         youTubeView.initialize(API_KEY, this);

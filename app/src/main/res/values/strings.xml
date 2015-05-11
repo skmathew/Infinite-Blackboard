@@ -4,23 +4,6 @@
 
     <string name="api_key"> AIzaSyA_PzQFAzM26Sz7LPg-Bowl2_JvxnPqxoc </string>
 
-    <string name="app_name">Infinite Blackboard</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="Prev_text">Prev</string>
-    <string name="Next_text">Next</string>
-    <string name="Home_text">Home</string>
-    <string name="Displacement_text">Displacement</string>
-    <string name="Speed_text">Speed</string>
-    <string name="Velocity_text">Velocity</string>
-    <string name="Acceleration_text">Acceleration</string>
-    <string name="Graphs_text">Kinematics with Graphs</string>
-    <string name="OneD_text">1-D Motion</string>
-    <string name="TwoD_text">2-D Motion</string>
-    <string name="Formulas_text">Formulas</string>
-    <string name="Review_text">Review</string>
-    <string name="Velocity_video">Velocity Video</string>
-
     <string-array name="sections">
     <item>Constant Velocity</item>
     <item>Constant Velocity Youtube Video</item>
@@ -28,18 +11,6 @@
     <item>Average Velocity</item>
     <item>Average Velocity Youtube Video</item>
     <item>Average Velocity Q/A</item>
-    <item>Speed</item>
-    <item>Speed Youtube Video</item>
-    <item>Speed Q/A</item>
-    <item>Acceleration</item>
-    <item>Acceleration Youtube Video</item>
-    <item>Acceleration Q/A</item>
-    <item>1-D Motion</item>
-    <item>1-D Motion Youtube Video</item>
-    <item>1-D Motion Q/A</item>
-    <item>2-D Motion</item>
-    <item>2-D Motion Youtube Video</item>
-    <item>2-D Motion Q/A</item>
     </string-array>
 
 
@@ -54,7 +25,7 @@
         <item>Thinking of distance as the product of velocity and time allows us to visualize this idea with a picture we can draw on the blackbord.</item>
         <item>Let\'s start with trying to think about velocity in a different direction.</item>
         <item>Let\'s think of velocity as going upward. It\'s like the faster you go, the higher we are on the vertical axis.</item>
-        <item>And then we think of time as going ogg to the right.</item>
+        <item>And then we think of time as going off to the right.</item>
         <item>Let\'s start with trying to think about velocity in a different direction.</item>
         <item>We can visualize all three things in just one picture drawn in two dimensions. Just as length as length times height is area in real space, velocity times time is distance in this particular way of looking at it.</item>
         <item>Let\'s look at an example. Suppose you are going 60 miles an hour. Of course that means you will go 60 miles in 60 minutes.</item>
@@ -67,8 +38,11 @@
 
 
 
-    <string name="Vel_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
-    <string name="Vel5_eq"><![CDATA[ Distance= Velocity * time ]]></string>
+    <string name="Vel_eq1"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
+
+
+    <string name="Vel_eq">Velocity=Distance/Time</string>
+    <string name="Vel5_eq">Distance = Velocity * Time</string>
 
 
     <string name="VelQA">What do you think the distance in the formula looks like in the our picture?</string>
@@ -85,144 +59,17 @@
     <string name="VelQA1a4">I don\'t know</string>
 
 
+    <string name="Prev_text">PREV</string>
+    <string name="Home_text">HOME</string>
+    <string name="Next_text">NEXT</string>
 
-    // Acceleration String
-
-    <string name="Acc"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
-    <string name="Acc_eq"><![CDATA[ Velocity=<sup>distance/</sup>time ]]></string>
-    <string name="Acc_eq1"><![CDATA[ Distance= Velocity * time ]]></string>
-    <string name="Acc_0">Welcome! I would like to help you better understand Constant Velocity.</string>
-    <string name="Acc_1">Lets start with the definition of velocity.</string>
-    <string name="Acc_2">We say that velocity is defined as distance over time.</string>
-    <string name="Acc_3">Of course we mean the distance traveled over the time it takes to get there. So it\'s a change of time.</string>
-    <string name="Acc_4">We will see why it\'s important to think in terms of "the change of" in the definition when we talk about acceleration.</string>
-    <string name="Acc_5">Now, this certainly one way of defining velocity, but there is another way of saying the same thing.</string>
-    <string name="Acc_6">We could also say that the distance traveled is proportional to the time of travel, and velocity is the proportionality constant.</string>
-    <string name="Acc_7">Thinking of distance as the product of velocity and time allows us to visualize this idea with a picture we can draw on the blackbord.</string>
-    <string name="Acc_8">Let\'s start with trying to think about velocity in a different direction.</string>
-    <string name="Acc_9">Let\'s think of velocity as going upward. It\'s like the faster you go, the higher we are on the vertical axis.</string>
-    <string name="Acc_10">And then we think of time as going ogg to the right.</string>
-    <string name="Acc_11">Let\'s start with trying to think about velocity in a different direction.</string>
-    <string name="Acc_12">We can visualize all three things in just one picture drawn in two dimensions. Just as length as length times height is area in real space, velocity times time is distance in this particular way of looking at it.</string>
-    <string name="Acc_13">Let\'s look at an example. Suppose you are going 60 miles an hour. Of course that means you will go 60 miles in 60 minutes.</string>
-    <string name="Acc_14">... or one mile for each minute. Most people know that 60 miles per hour is also one mile per minute.</string>
-    <string name="Acc_15">But did you know that 60 miles per hour is also 88 feet per second?</string>
-    <string name="Acc_16">Anyway, we can think of this same velocity in terms of different distances...</string>
-    <string name="Acc_17">...depending on time. In a second you travel 88 feet.</string>
+    <string name="app_name">Infinite Blackboard</string>
+    <string name="title_activity_velocity_video">Video Title</string>
+    <string name="test_string">Test string</string>
 
 
 
 
-
-
-
-    <string name="hometext">
-    Please click the Start button to begin.
-    </string>
-
-
-    <string name="test_string">
-    <![CDATA[ X<sup><small>2&theta</small></sup>&frac13; ]]>
-    </string>
-
-       <string name="disp_bb">
-    <![CDATA[ displacement vs distance ]]>
-    </string>
-
-    <string name="twod_equation1">
-        <![CDATA[ v<sub><small>f</small></sub> = v<sub><small>i</small></sub> + at ]]>
-    </string>
-
-    <string name="twod_equation2">
-        <![CDATA[ v<sub><small>f</small></sub><sup><small>2</small></sup> = v<sub><small>i</small></sub><sup><small>2</small></sup> + 2a&Delta;x ]]>
-    </string>
-
-    <string name="twod_equation3">
-        <![CDATA[ &Delta;x = v<sub><small>i</small></sub>t + &frac12;at<sup><small>2</small></sup> ]]>
-    </string>
-
-    <string name="twod_equation4">
-        <![CDATA[ &Delta;x = &frac12;(v<sub><small>i</small></sub> + v<sub><small>f</small></sub>)t ]]>
-    </string>
-
-
-
-
-
-    <string name="question">
-        A particle is moving around in a circle and its position is given in polar coordinates as x = Rcosθ, and y = Rsinθ, where R is the radius of the circle, and θ is in radians. From these equations derive the equation for centripetal acceleration.
-    </string>
-
-
-    <string name="displacementquest">
-        What is the displacement of the cross-country team if they begin at the school, run 10 miles and finish back at the school?
-     </string>string>
-
-    <string name="speed1">
-        In everyday use and in kinematics, the speed of an object is the magnitude of its velocity (the rate of change of its position).
-    </string>
-
-    <string name="speed2">
-
-    </string>
-
-    <string name="SpeedQuestion">
-
-    </string>
-
-    <string name="velocity1">
-        Velocity is the rate of change of the displacement,Δx. It is the difference between the final and initial position of an object.
-    </string>
-
-    <string name="velocity2">
-
-    </string>
-
-    <string name="VelocityQuestion">
-
-    </string>
-
-    <string name="acceleration1">
-        Speed and velocity only deal with movement at a constant rate. When we speed up, slow down, or change direction, we want to know our acceleration.
-    </string>
-
-    <string name="acceleration2">
-        "Acceleration, in physics, is the rate of change of velocity of an object. An object's acceleration is the net result of any and all forces acting on the object, as described by Newton's Second Law."
-
-    </string>
-
-    <string name="accelerationQuestion">
-        A car starts from rest and accelerates uniformly over a time of 5.21 seconds for a distance of 110 m. Determine the acceleration of the car.
-
-    </string>
-
-    <string name="twod_motion1">
-        2-dimensional motion is just like 1-dimensional motion, but with two directions to consider instead of just one! With 2D motion, we must now consider both horizontal motion and vertical motion at the same time! This is often portrayed through projectile motion. Projectile motion is when an object is traveling in freefall, but is also traveling horizontally simultaneously. A projectile\'s velocity changes in the vertical direction, but remains constant in the horizontal direction.
-    </string>
-
-    <string name="twod_motion2">
-        A very common example of this is shooting a cannonball out of a cannon. The path of the cannonball often follows a parabolic path that not only travels vertically, but horizontally as well! We\'ll be using the four kinematic equations to determine the displacement, time, velocity, or acceleration at any given moment during the projectile\'s motion.
-    </string>
-
-    <string name="twod_motionQuestion">
-        If a cannonball has an initial velocity of 860 m/s, what distance away does the cannonball hit the ground when shot from the cannon at a 45 degree angle with the horizontal?
-    </string>
-
-    <string name="title_activity_two_dmotion">Infinite Blackboard</string>
-    <string name="title_activity_two_dmotion_qa">Infinite Blackboard</string>
-    <string name="title_activity_acceleration">Infinite Blackboard</string>
-    <string name="title_activity_acceleration_qa">Infinite Blackboard</string>
-    <string name="title_activity_speed">Infinite Blackboard</string>
-    <string name="title_activity_speed_qa">Infinite Blackboard</string>
-    <string name="title_activity_velocity">VelocityActivity</string>
-    <string name="title_activity_velocity_video">VelocityVideo</string>
-    <string name="title_activity_velocity_qa">VelocityQAActivity</string>
-    <string name="title_activity_one_dmotion">OneDMotionActivity</string>
-    <string name="title_activity_one_dmotion_qa">OneDMotionQAActivity</string>
-
-    <string name="oned_id1">1-dimensional motion is kinetics dealing with just one direction! With 1D motion, we only must consider the horizontal motion! This is portrayed through a straight line. It is when an object is traveling horizontally.</string>
-    <string name="oned_id2">A very common example of this speeding a car. The path of the car often follows a straight path that only travels horizontally. We\'ll be using the four kinematic equations to determine the displacement, time, velocity, or acceleration at any given moment during the projectile\'s motion.</string>
-    <string name="motion1d_question">An airplane accelerates down a runway at 3.20 m/s2 for 32.8 s until is finally lifts off the ground. Determine the distance traveled before takeoff.</string>
 
 
 

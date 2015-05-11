@@ -2,6 +2,7 @@ package unt.infiniteblackboard;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -28,15 +29,18 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_constantvelocity_qa);
+        setContentView(R.layout.activity_blackboard_qa);
 
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
         imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
-        imageViewtop.setImageResource(R.drawable.chart);
+        imageViewtop.setImageResource(R.drawable.chart1);
         textView = (TextView) findViewById(R.id.myImageViewText);
         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
+        Typeface font = Typeface.createFromAsset(getAssets(), "Lucida_Handwrit.ttf");
+        textView.setTypeface(font);
+
         textView = (TextView) findViewById(R.id.textView1);
         textView.setText(Html.fromHtml(getString(R.string.VelQA)));
 
@@ -86,7 +90,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
                         imageView.setBackgroundResource(R.drawable.view_animation);
                         imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
                         //imageViewtop.setImageResource(0);
-                        imageViewtop.setImageResource(R.drawable.chart);
+                        imageViewtop.setImageResource(R.drawable.chart1);
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
                         textView = (TextView) findViewById(R.id.myImageViewText);
@@ -277,7 +281,7 @@ public class ConstantVelocityQAActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
     }
 

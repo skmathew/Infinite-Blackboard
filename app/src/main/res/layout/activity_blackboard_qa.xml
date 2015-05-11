@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="#000000"
     tools:context=".ConstantVelocityQAActivity"
     >
     <LinearLayout
@@ -34,7 +35,7 @@
                 android:layout_alignBottom="@+id/imageView"
                 android:layout_margin="5dp"
                 android:gravity = "top|center"
-                android:text="@string/test_string"
+                android:text="mytest"
                 android:textColor="#FEFEFA"
                 android:textStyle="italic"
                 />
@@ -51,7 +52,7 @@
                 android:layout_alignBottom="@+id/imageView"
                 android:layout_margin="5dp"
                 android:gravity = "top|left"
-                android:text="@string/test_string"
+                android:text="mytext"
                 android:textColor="#FEFEFA"
                 android:textStyle="italic"
                 />
@@ -89,6 +90,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/VelQA"
+            android:textColor="#FFFFFF"
             android:textStyle="bold|italic" />
 
 
@@ -108,24 +110,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/VelQAa1"
+                    android:buttonTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
                     android:id="@+id/radioButton" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/VelQAa2"
+                    android:buttonTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
                     android:id="@+id/radioButton2" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/VelQAa3"
+                    android:buttonTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
                     android:id="@+id/radioButton3" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/VelQAa4"
+                    android:buttonTint="#FFFFFF"
+                    android:textColor="#FFFFFF"
                     android:id="@+id/radioButton4" />
 
             </RadioGroup>

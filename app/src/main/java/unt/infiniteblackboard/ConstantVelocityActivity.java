@@ -1,6 +1,7 @@
 package unt.infiniteblackboard;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -29,7 +30,7 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_constantvelocity);
+        setContentView(R.layout.activity_blackboard);
 
         final String[] velocity = getResources().getStringArray(R.array.velocity);
 
@@ -39,8 +40,13 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
         imageView = (ImageView) findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
         mAnim = (AnimationDrawable) imageView.getBackground();
-
         textView = (TextView) findViewById(R.id.myImageViewText);
+        Typeface font = Typeface.createFromAsset(getAssets(), "Lucida_Handwrit.ttf");
+        textView.setTypeface(font);
+
+
+
+
         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
 
         textView = (TextView) findViewById(R.id.textView1);
