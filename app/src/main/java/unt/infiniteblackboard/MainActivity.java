@@ -27,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
     public static final String PREF_QUESTIONS_CORRECT = "pref_questions_correct";
     private ListView mainListView ;
     private ArrayAdapter<String> listAdapter ;
-    int[] images = {R.drawable.blackbaord,R.drawable.youtube,R.drawable.test};
+    int[] images = {R.drawable.blackbaord,R.drawable.youtube,R.drawable.calculator,R.drawable.test};
     private AnimationDrawable mAnim;
     ImageView imageView;
     TextView textView;
@@ -86,6 +86,11 @@ public class MainActivity extends ActionBarActivity {
                         break;
 
                     case 2:
+                        intent = new Intent(MainActivity.this, ConstantVelocityCalculator.class);
+                        startActivity(intent);
+                        break;
+
+                    case 3:
                         intent = new Intent(MainActivity.this, ConstantVelocityQAActivity.class);
                         startActivity(intent);
                         break;
@@ -166,7 +171,7 @@ class VAdapter extends ArrayAdapter<String>
         myText.setTextColor(Color.WHITE);
         myText.setTypeface(null, Typeface.BOLD);
 
-        myImage.setImageResource(images[position%3]);
+        myImage.setImageResource(images[position%4]);
         myText.setText(titleArray[position]);
         return row;
     }

@@ -7,12 +7,15 @@
     <string-array name="sections">
     <item>Constant Velocity</item>
     <item>Constant Velocity Youtube Video</item>
+    <item>Constant Velocity Calculator</item>
     <item>Constant Velocity Q/A</item>
     <item>Average Velocity</item>
     <item>Average Velocity Youtube Video</item>
+    <item>Average Velocity Calculator</item>
     <item>Average Velocity Q/A</item>
     <item>New Section</item>
     <item>New Section Youtube Video</item>
+    <item>New Section Calculator</item>
     <item>New Section Q/A</item>
     </string-array>
 
@@ -69,6 +72,7 @@
     <string name="app_name">Infinite Blackboard</string>
     <string name="title_activity_velocity_video">Video Title</string>
     <string name="test_string">Test string</string>
+    <string name="title_activity_constant_velocity_calculator">Constant Velocity Calculator</string>
 
 
 
