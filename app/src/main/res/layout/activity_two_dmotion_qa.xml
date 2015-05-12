@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    tools:context=".TwoDMotionQAActivity">
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
@@ -15,96 +17,191 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="250dp"
                 android:id="@+id/imageView"
-                android:src="@drawable/tg2d"
                 />
 
-            <include layout="@layout/score_tracker_layout"/>
+            <!--<include layout="@layout/score_tracker_layout"/>-->
 
-        </RelativeLayout>
-
-        <TextView
-
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/twod_motionQuestion"
-            android:textStyle="bold|italic"
-             />
-
-        <RadioGroup
-            android:layout_width="fill_parent"
-            android:layout_height="123dp"
-            android:id="@+id/rdoGroup"
-            android:minHeight="200dp"
-            android:minWidth="200dp"
-            android:focusableInTouchMode="false"
-            android:nestedScrollingEnabled="false">
-
-            <RadioButton
+            <TextView
+                android:id="@+id/myImageViewText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="A. 25,000 m"
-                android:id="@+id/radioButton" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B. 50,000 m"
-                android:id="@+id/radioButton2" />
+                android:layout_alignTop="@+id/imageView"
+                android:layout_alignLeft="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_margin="5dp"
+                android:gravity = "top|center"
+                android:text="@string/test_string"
+                android:textColor="#FEFEFA"
+                android:textStyle="italic"
+                />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="C. 75,000 m"
-                android:id="@+id/radioButton3" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="D. 100,000 m"
-                android:id="@+id/radioButton4" />
-
-        </RadioGroup>
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Medium Text"
-            android:id="@+id/textView2"
-            android:enabled="false"
-            android:visibility="invisible"
-            android:textStyle="bold" />
-
-        <Button
+        <!--<TextView
+            android:id="@+id/Score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Submit"
-            android:id="@+id/submit_button" />
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_margin="5dp"
+            android:gravity = "top|left"
+            android:text="@string/test_string"
+            android:textColor="#FEFEFA"
+            android:textStyle="italic"
+            />-->
 
-        <Button
-            android:id="@+id/Previous_Button"
-            android:layout_width="fill_parent"
-            android:text="Prev"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
 
-        <Button
-            android:text="Home"
-            android:id="@+id/Home_button"
-            android:layout_toRightOf="@+id/Previous_Button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
 
-        <Button
-            android:text="Next"
-            android:id="@+id/Next_Button"
-            android:layout_toRightOf="@+id/Home_button"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-    </LinearLayout>
-</ScrollView>
+
+        <ImageView
+            android:id="@+id/imageViewtop"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/imageView"
+            android:layout_alignRight="@+id/imageView"
+            android:gravity = "top|left"
+            />
+
+    </RelativeLayout>
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/twod_motionQuestion"
+         android:textStyle="bold|italic"
+          />
+
+    <!--<TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/VelQA"
+        android:textStyle="bold|italic" />-->
+
+         <RadioGroup
+             android:layout_width="fill_parent"
+             android:layout_height="123dp"
+             android:id="@+id/rdoGroup"
+             android:minHeight="200dp"
+             android:minWidth="200dp"
+             android:focusableInTouchMode="false"
+             android:nestedScrollingEnabled="false">
+
+             <RadioButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="A. 25,000 m"
+                 android:id="@+id/radioButton" />
+
+             <RadioButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="B. 50,000 m"
+                 android:id="@+id/radioButton2" />
+
+             <RadioButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="C. 75,000 m"
+                 android:id="@+id/radioButton3" />
+
+             <RadioButton
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="D. 100,000 m"
+                 android:id="@+id/radioButton4" />
+
+         </RadioGroup>
+
+         <TextView
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:layout_below="@+id/rdoGroup"
+             android:layout_above="@+id/submit_button"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:text="Medium Text"
+             android:id="@+id/textView2"
+             android:gravity = "top|right"
+             android:enabled="false"
+             android:visibility="invisible"
+             android:textStyle="bold" />
+     </LinearLayout>
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Submit"
+         android:id="@+id/submit_button"
+         android:layout_above="@+id/Previous_Button"
+
+         android:textColor="#FFFFFF"
+         android:textSize="30sp"
+         android:background="@drawable/buttonshape"
+         android:shadowColor="#A8A8A8"
+         android:shadowDx="0"
+         android:shadowDy="0"
+
+         />
+
+     <Button
+         android:id="@+id/Previous_Button"
+         android:layout_width="fill_parent"
+         android:text="@string/Prev_text"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_above="@+id/Home_button"
+
+         android:textColor="#FFFFFF"
+         android:textSize="30sp"
+         android:background="@drawable/buttonshape"
+         android:shadowColor="#A8A8A8"
+         android:shadowDx="0"
+         android:shadowDy="0"
+         android:shadowRadius="5"
+
+         >
+     </Button>
+     <Button
+         android:text="@string/Home_text"
+         android:id="@+id/Home_button"
+         android:layout_above="@+id/Next_Button"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+
+         android:textColor="#FFFFFF"
+         android:textSize="30sp"
+         android:background="@drawable/buttonshape"
+         android:shadowColor="#A8A8A8"
+         android:shadowDx="0"
+         android:shadowDy="0"
+         android:shadowRadius="5"
+
+         >
+     </Button>
+
+     <Button
+         android:text="@string/Next_text"
+         android:id="@+id/Next_Button"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_alignParentBottom="true"
+
+         android:textColor="#FFFFFF"
+         android:textSize="30sp"
+         android:background="@drawable/buttonshape"
+         android:shadowColor="#A8A8A8"
+         android:shadowDx="0"
+         android:shadowDy="0"
+         android:shadowRadius="5"
+         >
+     </Button>
+ </RelativeLayout>
