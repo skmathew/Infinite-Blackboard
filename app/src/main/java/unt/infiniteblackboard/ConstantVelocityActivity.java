@@ -37,31 +37,31 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
         //loads the contents from string.xml file to array named velocity
         final String[] velocity = getResources().getStringArray(R.array.velocity);
 
-        TextView Textv1 = (TextView) findViewById(R.id.textView1);
+        TextView Textv1 =  findViewById(R.id.textView1);
         final String texts1 = Textv1.getText().toString();
 
         //animation part
-        imageView = (ImageView) findViewById(R.id.imageView);
+        imageView =  findViewById(R.id.imageView);
         imageView.setBackgroundResource(R.drawable.view_animation1);
-        mAnim = (AnimationDrawable) imageView.getBackground();
+        mAnim =  imageView.getBackground();
         
         //equations on the board and custom font
-        textView = (TextView) findViewById(R.id.myImageViewText);
+        textView =  findViewById(R.id.myImageViewText);
         Typeface font = Typeface.createFromAsset(getAssets(), "Lucida_Handwrit.ttf");
         textView.setTypeface(font);
         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
 
         //the contents of the page
-        textView = (TextView) findViewById(R.id.textView1);
+        textView =  findViewById(R.id.textView1);
         textView.setText(velocity[0]);
 
-        TextView tv = (TextView) findViewById(R.id.textView1);
+        TextView tv =  findViewById(R.id.textView1);
         tv.setMovementMethod(new ScrollingMovementMethod());
 
         //buttons names
-        final Button button = (Button) findViewById(R.id.Home_button);
-        final Button button1 = (Button) findViewById(R.id.Previous_Button);
-        final Button button2 = (Button) findViewById(R.id.Next_Button);
+        final Button button =  findViewById(R.id.Home_button);
+        final Button button1 =  findViewById(R.id.Previous_Button);
+        final Button button2 =  findViewById(R.id.Next_Button);
 
 
         /*
@@ -94,17 +94,17 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
-                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView =  findViewById(R.id.imageView);
                         imageView.setBackgroundResource(R.drawable.view_animation);
-                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        imageViewtop = findViewById(R.id.imageViewtop);
                         imageViewtop.setImageResource(R.drawable.chart);
                         imageViewtop.setImageResource(0);
                         mAnim = (AnimationDrawable) imageView.getBackground();
                         mAnim.start();
-                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView =  findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_eq
                         )));
-                        textView = (TextView) findViewById(R.id.textView1);
+                        textView =  findViewById(R.id.textView1);
                         textView.setText(velocity[count]);
                         break;
 
@@ -113,16 +113,16 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
-                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView =  findViewById(R.id.imageView);
                         imageView.setBackgroundResource(R.drawable.view_animation);
-                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        imageViewtop = findViewById(R.id.imageViewtop);
                         imageViewtop.setImageResource(R.drawable.chart);
                         imageViewtop.setImageResource(0);
-                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim =  imageView.getBackground();
                         mAnim.start();
-                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView =  findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
-                        textView = (TextView) findViewById(R.id.textView1);
+                        textView =  findViewById(R.id.textView1);
                         textView.setText(velocity[count]);
                         break;
 
@@ -131,16 +131,16 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
-                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView =  findViewById(R.id.imageView);
                         imageView.setBackgroundResource(R.drawable.view_animation);
-                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        imageViewtop =  findViewById(R.id.imageViewtop);
                         imageViewtop.setImageResource(R.drawable.chart);
                         imageViewtop.setImageResource(0);
-                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim =  imageView.getBackground();
                         mAnim.start();
-                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView =  findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel_eq)));
-                        textView = (TextView) findViewById(R.id.textView1);
+                        textView =  findViewById(R.id.textView1);
                         textView.setText(velocity[count]);
                         break;
 
@@ -150,16 +150,16 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
-                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView = findViewById(R.id.imageView);
                         imageView.setBackgroundResource(R.drawable.view_animation);
-                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        imageViewtop = findViewById(R.id.imageViewtop);
                         imageViewtop.setImageResource(R.drawable.chart);
                         imageViewtop.setImageResource(0);
-                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim =  imageView.getBackground();
                         mAnim.start();
-                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView =  findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
-                        textView = (TextView) findViewById(R.id.textView1);
+                        textView =  findViewById(R.id.textView1);
                         textView.setText(velocity[count]);
                         break;
 
@@ -169,16 +169,16 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
-                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView =  findViewById(R.id.imageView);
                         imageView.setBackgroundResource(R.drawable.view_animation);
-                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        imageViewtop = findViewById(R.id.imageViewtop);
                         imageViewtop.setImageResource(R.drawable.chart);
                         imageViewtop.setImageResource(0);
-                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim =  imageView.getBackground();
                         mAnim.start();
-                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView =  findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
-                        textView = (TextView) findViewById(R.id.textView1);
+                        textView =  findViewById(R.id.textView1);
                         textView.setText(velocity[count]);
                         break;
 
@@ -187,14 +187,14 @@ public class ConstantVelocityActivity extends ActionBarActivity  {
                         if (mAnim.isRunning()){
                             mAnim.stop();
                         }
-                        imageView = (ImageView) findViewById(R.id.imageView);
+                        imageView =  findViewById(R.id.imageView);
                         imageView.setBackgroundResource(R.drawable.view_animation);
-                        imageViewtop = (ImageView) findViewById(R.id.imageViewtop);
+                        imageViewtop =  findViewById(R.id.imageViewtop);
                         imageViewtop.setImageResource(R.drawable.chart);
                         imageViewtop.setImageResource(0);
-                        mAnim = (AnimationDrawable) imageView.getBackground();
+                        mAnim =  imageView.getBackground();
                         mAnim.start();
-                        textView = (TextView) findViewById(R.id.myImageViewText);
+                        textView =  findViewById(R.id.myImageViewText);
                         textView.setText(Html.fromHtml(getString(R.string.Vel5_eq)));
                         textView = (TextView) findViewById(R.id.textView1);
                         textView.setText(velocity[count]);
